@@ -65,3 +65,14 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Déploiement des composants dans un espace de nom
 - [ ] Correction des problèmes
 - [ ] Exposition de l'application au travers d'un **ingress**
+
+
+## 4 - Mise à jour d'un cluster K8S
+
+Source: 
+- [ ] Déploiement des composants dans un espace de nom
+- [ ] Correction des problèmes
+- [ ] Exposition de l'application au travers d'un **ingress**
+
+
+## 5 - Initiation à Helm
