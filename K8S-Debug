@@ -1,4 +1,4 @@
-#Namespace that's stuck in the "terminating status":
+## Namespace that's stuck in the "terminating status":
 
 1. Get all k8s resources that are stuck in the "terminating" stage in the Namespace and delete them.
 
