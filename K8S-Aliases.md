@@ -4,8 +4,6 @@ source <(helm completion zsh)
 
 alias k=kubectl
 
-# when using below aliases, print kubectl command and then execute it
-function kctl() { echo "+ kubectl $@" && command kubectl $@ }
 
 # add aliases collection like 'kgpo' for 'kubectl get pods` from https://github.com/ahmetb/kubectl-aliases
 [ ! -f ~/.kube/aliases.sh ] && curl -fsSL "https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases" > ~/.kube/aliases.sh && sed -i -e 's/kubectl/kctl/g' ~/.kube/aliases.sh
