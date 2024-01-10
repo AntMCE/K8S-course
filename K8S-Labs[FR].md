@@ -18,7 +18,14 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 | Adresse IP |                        |
 | Kubeconfig | (livré au participant) |
 
-## 1 - Mon premier conteneur Kubernetes
+## La difficulté des excercices est exprimée en nombre de Wheel:
+
+☸️ -> Facile
+☸️☸️ -> Moyen 
+☸️☸️☸️ -> Difficile
+
+
+## 1 - Mon premier conteneur Kubernetes ☸️☸️ 
 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
@@ -32,7 +39,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Récupérer le port utilisé sur la machine hôte
 - [ ] Accéder au service whoami depuis votre poste client
 
-## 2 - Stockage persistant
+## 2 - Stockage persistant ☸️☸️☸️
 
 Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de données sur un *Stockage Persistant*.
 
@@ -67,7 +74,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Exposition de l'application au travers d'un **ingress**
 
 
-## 4 - Mise à jour d'un cluster K8S via Kubeadm
+## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
 
  
 - [ ] Skew Policy à connaitre https://kubernetes.io/releases/version-skew-policy/
