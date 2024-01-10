@@ -76,7 +76,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Mise à jour des noeuds Worker
 
 
-## 5 - Initiation à Helm
+## 5 - Initiation à Helm ☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -84,7 +84,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "setra-app" dans le namespace setra
+## 5 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -92,7 +92,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "axians-app" dans le namespace axians
+## 5 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
