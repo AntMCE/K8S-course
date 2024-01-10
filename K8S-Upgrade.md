@@ -1,10 +1,10 @@
-## Master Nodes
+# Master Nodes
 
-# drain
+## drain
 
 `kubectl drain cks-controlplane`
 
-# upgrade kubeadm
+## upgrade kubeadm
 
 `apt-get update
 apt-cache show kubeadm | grep 1.22
@@ -13,39 +13,39 @@ apt-mark hold kubectl kubelet
 apt-get install kubeadm=1.22.5-00
 apt-mark hold kubeadm`
 
-# kubeadm upgrade
+## kubeadm upgrade
 
 `kubeadm version # correct version?
 kubeadm upgrade plan
 kubeadm upgrade apply 1.22.5`
 
-# kubelet and kubectl
+## kubelet and kubectl
 
 `apt-mark unhold kubelet kubectl
 apt-get install kubelet=1.22.5-00 kubectl=1.22.5-00
 apt-mark hold kubelet kubectl`
 
-# restart kubelet
+## restart kubelet
 
 `service kubelet restart
 service kubelet status`
 
-# show result
+## show result
 
 `kubeadm upgrade plan
 kubectl version`
 
-# uncordon
+## uncordon
 
 `kubectl uncordon cks-controlplane`
 
-## Worker Nodes
+# Worker Nodes
 
-# drain
+## drain
 
 `kubectl drain cks-node`
 
-# upgrade kubeadm
+## upgrade kubeadm
 
 `apt-get update
 apt-cache show kubeadm | grep 1.22
@@ -54,22 +54,22 @@ apt-mark hold kubectl kubelet
 apt-get install kubeadm=1.22.5-00
 apt-mark hold kubeadm`
 
-# kubeadm upgrade
+## kubeadm upgrade
 
 `kubeadm version # correct version?
 kubeadm upgrade node`
 
-# kubelet and kubectl
+## kubelet and kubectl
 
 `apt-mark unhold kubelet kubectl
 apt-get install kubelet=1.22.5-00 kubectl=1.22.5-00
 apt-mark hold kubelet kubectl`
 
-# restart kubelet
+## restart kubelet
 
 `service kubelet restart
 service kubelet status`
 
-# uncordon
+## uncordon
 
 `kubectl uncordon cks-node`
