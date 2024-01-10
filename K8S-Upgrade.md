@@ -1,6 +1,6 @@
 # Kubeadm Upgrade (Ubuntu)
 
-# Master Nodes 
+# - 1 Master Nodes 
 
 ## drain
 
@@ -41,7 +41,7 @@ kubectl version`
 
 `kubectl uncordon cks-controlplane`
 
-# Worker Nodes
+# - 2 Worker Nodes
 
 ## drain
 
