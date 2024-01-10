@@ -70,7 +70,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 ## 4 - Mise à jour d'un cluster K8S via Kubeadm
 
  
-- [ ] Skew Policies à connaitre
+- [ ] Skew Policies à connaitre https://kubernetes.io/releases/version-skew-policy/
 - [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
 - [ ] Mise à jour du noeud Master
 - [ ] Mise à jour des noeuds Worker
