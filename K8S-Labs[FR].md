@@ -21,7 +21,9 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 ## La difficulté des excercices est exprimée en nombre de Wheel:
 
 ☸️ -> Facile
+
 ☸️☸️ -> Moyen 
+
 ☸️☸️☸️ -> Difficile
 
 
