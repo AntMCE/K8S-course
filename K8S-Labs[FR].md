@@ -67,12 +67,13 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Exposition de l'application au travers d'un **ingress**
 
 
-## 4 - Mise à jour d'un cluster K8S
+## 4 - Mise à jour d'un cluster K8S via Kubeadm
 
-Source: 
-- [ ] Déploiement des composants dans un espace de nom
-- [ ] Correction des problèmes
-- [ ] Exposition de l'application au travers d'un **ingress**
+ 
+- [ ] Skew Policies à connaitre
+- [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
+- [ ] Mise à jour du noeud Master
+- [ ] Mise à jour des noeuds Worker
 
 
 ## 5 - Initiation à Helm
