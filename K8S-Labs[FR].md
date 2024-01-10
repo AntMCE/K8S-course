@@ -76,3 +76,10 @@ Source:
 
 
 ## 5 - Initiation à Helm
+
+- [ ] Lister les applications installées via Helm
+- [ ] Mettre à jour les repo Helm
+- [ ] Recherche des matrices de compatibilité
+- [ ] Chercher une version spécifique d'un repo Helm
+- [ ] Upgrader une application installé via Helm (avec version spécifique)
+
