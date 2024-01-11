@@ -7,3 +7,20 @@ More: https://lnkd.in/g-TzypzS
 ```
 kubectl api-resources
 ```
+
+## Interact with the container directly from the Worker / Master Nodes
+```
+crictl pull IMAGE-NAME
+```
+crictl images`
+```
+crictl ps -a
+```
+crictl exec -it
+```
+crictl inspect`
+```
+crictl logs
+```
+crictl pods
+```
