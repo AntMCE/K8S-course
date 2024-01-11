@@ -12,15 +12,22 @@ kubectl api-resources
 ```
 crictl pull IMAGE-NAME
 ```
-crictl images`
+```
+crictl images
+```
 ```
 crictl ps -a
 ```
+```
 crictl exec -it
 ```
-crictl inspect`
+```
+crictl inspect
+```
 ```
 crictl logs
 ```
+```
 crictl pods
+```
 ```
