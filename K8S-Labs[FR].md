@@ -26,6 +26,14 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 ☸️☸️☸️ -> Difficile
 
+## 1 - Mon premier pod Kubernetes ☸️☸️ 
+
+- [ ] Création d'un *pod* nommé pod1
+  - [ ] Utilisant l'image **httpd:2.4.41-alpine**
+  - [ ] Le conteneur doit être nommé **pod1-container**
+  - [ ] Dans le namespace **votre prénom**
+  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus**
+
 
 ## 1 - Mon premier conteneur Kubernetes ☸️☸️ 
 
@@ -34,6 +42,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
 - [ ] Création d'un *deploiement* nommé whoami
   - [ ] Utilisant l'image **containous/whoami**
   - [ ] Utilisant le port interne **80/TCP**
+  - [ ] Dans le namespace **votre prénom**
 - [ ] Création d'un service nommé **whoami**
   - [ ] Ecoutant sur le port **80**
   - [ ] Lié au deploiement **whoami**
