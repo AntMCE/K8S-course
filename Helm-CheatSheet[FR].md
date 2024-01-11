@@ -12,6 +12,11 @@ helm list -A
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 ```
+# Lister les repos locaux.
+```
+helm repo list
+```
+
 # Installer une application via Helm en précisant des paramètres spécifiques (storageClass).
 ```
 helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring alertmanager.persistentVolume.storageClass="gp2",server.persitentVolume.storageClass="gp2”
