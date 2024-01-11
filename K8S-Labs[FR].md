@@ -35,7 +35,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
   - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus**
 
 
-## 1 - Mon premier conteneur Kubernetes ☸️☸️ 
+## 1 - Mon premier déploiement Kubernetes ☸️☸️ 
 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
