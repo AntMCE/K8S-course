@@ -30,3 +30,11 @@ crictl logs
 ```
 crictl pods
 ```
+
+## Command "top" for K8S
+```
+kubectl top node    
+```
+```
+kubectl top pod   
+```
