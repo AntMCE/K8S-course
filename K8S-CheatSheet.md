@@ -2,3 +2,8 @@
 kubectl get all returns ONLY a list of pods, services, daemon sets, deployments, replica sets, jobs, cronjobs, and stateful sets
 
 More: https://lnkd.in/g-TzypzS
+
+## Get all the API resources available in the cluster
+```
+kubectl api-resources
+```
