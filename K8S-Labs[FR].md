@@ -1,7 +1,7 @@
 # [Labs] Initiation à Kubernets 
 
-    Auteur: 
-    Courriel: 
+    Auteur: Anthony MACLE
+    Courriel: anthony@kube-conseil.fr
     Licence: CC-BY-4.0
     Version: 1.0
 
