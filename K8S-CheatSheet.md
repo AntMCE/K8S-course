@@ -46,8 +46,6 @@ openssl genrsa -out trainee.key 2048
 ```
 openssl req -new -key trainee.key -out trainee.csr # only set Common Name = trainee
 ```
-```
-
  create CertificateSigningRequest with base64 trainee.csr
 https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests
 
