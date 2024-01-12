@@ -52,7 +52,6 @@ https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requ
 ```
 cat trainee.csr | base64 -w 0
 ```
-```
 add new KUBECONFIG
 ``` 
 k config set-credentials trainee --client-key=trainee.key --client-certificate=trainee.crt
