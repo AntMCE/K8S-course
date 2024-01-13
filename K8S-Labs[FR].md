@@ -15,8 +15,8 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 | Clé        | Valeur                 |
 | ---------- | ---------------------- |
-| Adresse IP |                        |
-| Kubeconfig | (livré au participant) |
+| Adresse IP | livré aux participants |
+| Kubeconfig | livré aux participants |
 
 ## La difficulté des excercices est exprimée en nombre de Wheel:
 
