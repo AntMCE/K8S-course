@@ -48,12 +48,25 @@ openssl genrsa -out trainee.key 2048
 ```
 openssl req -new -key trainee.key -out trainee.csr # only set Common Name = trainee
 ```
- create CertificateSigningRequest with base64 trainee.csr
+ create CertificateSigningRequest named trainee-csr.yml with base64 trainee.csr
 https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests
 
 ```
 cat trainee.csr | base64 -w 0
 ```
+## Pass the certificate to the CertificateSigningRequest object 
+
+```
+ k create -f csr-trainee.yml
+```
+## The certificate should now be in pending Condition
+```
+k get csr  
+```
+```
+k certificate approve trainee
+```
+
 add new KUBECONFIG
 ``` 
 k config set-credentials trainee --client-key=trainee.key --client-certificate=trainee.crt
