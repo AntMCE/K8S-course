@@ -3,7 +3,7 @@ kubectl get all returns ONLY a list of pods, services, daemon sets, deployments,
 
 More: https://lnkd.in/g-TzypzS
 
-# Get all the API resources available in the cluster
+# Get all the API resources available in the cluster.
 ```
 kubectl api-resources
 ```
