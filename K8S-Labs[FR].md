@@ -15,8 +15,8 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 | Clé        | Valeur                 |
 | ---------- | ---------------------- |
-| Adresse IP |                        |
-| Kubeconfig | (livré au participant) |
+| Adresse IP | livré aux participants |
+| Kubeconfig | livré aux participants |
 
 ## La difficulté des excercices est exprimée en nombre de Wheel:
 
@@ -117,3 +117,10 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Recherche des matrices de compatibilité
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
+
+## 5 - Entendre les droits du user trainee via RBAC☸️
+
+- [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
+- [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
+- [ ] Ajouter tous les droits dans le namespace Dev
+
