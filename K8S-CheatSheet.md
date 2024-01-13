@@ -40,7 +40,7 @@ kubectl top pod
 ```
 ##  Create a certificate + key as user trainee
 
-create key --> create csr --> API K8S --> download CRT from API --> use CRT + KET
+# create key --> create csr --> API K8S --> download CRT from API --> use CRT + KET
 
 ```
 openssl genrsa -out trainee.key 2048
