@@ -98,12 +98,12 @@ k config use-context trainee
 
 # RBAC
 ```
- k create clusterrole read-only --verb get --resource deployments
+ k create clusterrole read-trainee-cr --verb get --resource deployments
 ```
 ## Edit if needed
 ```
- k edit clusterrole read-only
+ k edit clusterrole read-trainee-cr
 ```
 ```
-k create clusterrolebinding read-only-rb --user trainee --clusterrole read-only
+k create clusterrolebinding read-trainee-rb --user trainee --clusterrole read-only-cr
 ```
