@@ -66,6 +66,10 @@ k get csr
 ```
 k certificate approve trainee
 ```
+```
+k get csr trainee -o yml
+```
+## Copy the section "certificate"
 
 add new KUBECONFIG
 ``` 
