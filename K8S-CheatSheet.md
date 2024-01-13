@@ -78,7 +78,7 @@ echo COPY PAST CERTIFICATE | base64 -d > trainee.crt
 
 add new KUBECONFIG
 ``` 
-k config set-credentials trainee --client-key=trainee.key --client-certificate=trainee.crt
+k config set-credentials trainee --client-key=trainee.key --client-certificate=trainee.crt --embed-certs
 ```
 ```
 k config set-context trainee --cluster=kubernetes --user=trainee
