@@ -68,9 +68,13 @@ k certificate approve trainee
 ```
 ## Copy the section  " certificate "
 ```
-k get csr trainee -o yml
+k get csr trainee -o yaml | base64 -d > trainee.crt
 ```
+## Decode the certificate and pass it to the file trainee.crt
 
+```
+echo COPY PAST CERTIFICATE 
+```
 
 add new KUBECONFIG
 ``` 
