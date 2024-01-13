@@ -76,7 +76,7 @@ k get csr trainee -o yaml
 echo COPY PAST CERTIFICATE | base64 -d > trainee.crt
 ```
 
-add new KUBECONFIG
+## add new KUBECONFIG
 ``` 
 k config set-credentials trainee --client-key=trainee.key --client-certificate=trainee.crt --embed-certs
 ```
@@ -91,4 +91,18 @@ k config get-contexts
 ```
 ```
 k config use-context trainee
+```
+
+## You now need to make sure your user has the right permission via RBAC
+
+
+# RBAC
+```
+ k create clusterrole read-only --verb get --resource deployments
+```
+## Edit if needed
+```
+ k edit clusterrole read-only
+```
+k create clusterrolebinding read-only-rb --user trainee --clusterrole read-only
 ```
