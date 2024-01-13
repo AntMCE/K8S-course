@@ -96,14 +96,10 @@ k config use-context trainee
 ## You now need to make sure your user has the right permission via RBAC
 
 
-# RBAC
+# RBAC see the RBAC folder in this repo to get the yml file
 ```
- k create clusterrole read-trainee-cr --verb get --resource deployments
-```
-## Edit if needed
-```
- k edit clusterrole read-trainee-cr
+ k apply -f RBAC-ClusroleRole.yml
 ```
 ```
-k create clusterrolebinding read-trainee-rb --user trainee --clusterrole read-only-cr
+k apply -f RBAC-ClusroleRoleBinding.yml
 ```
