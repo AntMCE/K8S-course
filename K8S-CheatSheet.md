@@ -104,5 +104,6 @@ k config use-context trainee
 ```
  k edit clusterrole read-only
 ```
+```
 k create clusterrolebinding read-only-rb --user trainee --clusterrole read-only
 ```
