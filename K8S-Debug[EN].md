@@ -57,6 +57,9 @@ Pods can have startup and runtime errors.
 
  ✅ TeardownNetworkError
 
+
+ 
+
 ❗𝑰𝒎𝒂𝒈𝒆𝑷𝒖𝒍𝒍𝑩𝒂𝒄𝒌𝑶𝒇𝒇
 
 ✍ This error appears when k8s isn't able to retrieve the image for one of the hashtag#containers of the Pod.
