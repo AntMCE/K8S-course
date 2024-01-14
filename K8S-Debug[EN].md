@@ -53,6 +53,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
 ```
  Kubectl logs <podname>
  ```
+ ```
  Kubectl get po <podname>
  ```
  ```
