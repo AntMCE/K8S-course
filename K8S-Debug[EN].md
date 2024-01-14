@@ -26,7 +26,9 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
 ```
  Kubectl describe po <podname>
  ```
+ ```
  Kubectl get po <podname>
+ ```
  ```
  Kubectl apply -f <deployment file name>
  ```
@@ -37,6 +39,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
 𝙐𝙨𝙚𝙛𝙪𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 
 ```
  Kubectl describe po <podname>
+ ```
  ```
  Kubectl logs <podname>
  ```
@@ -52,6 +55,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
  ```
  Kubectl get po <podname>
  ```
+ ```
  Kubectl apply -f <deployment file name>
  ```
 Lookout for any exceptions in logs /missing variables at code level as well .
@@ -63,6 +67,7 @@ Lookout for any exceptions in logs /missing variables at code level as well .
 ```
  Kubectl logs <podname>
  ```
+ ```
  Kubectl describe po <podname>
  ```
 
@@ -71,6 +76,7 @@ Lookout for any exceptions in logs /missing variables at code level as well .
 𝙐𝙨𝙚𝙛𝙪𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 
 ```
  Kubectl logs <podname>
+ ```
  ```
  Kubectl get po <podname> and check for its state 
  ```
