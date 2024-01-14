@@ -36,13 +36,13 @@
 
 **Services**: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
-    3 types of services:
+*3 types of services:*
 
-    Node Port:
+nodePort:
 
-    cluster IP:
+clusterIP:
 
-    Load balancer:
+loadBalancer:
 
 **YAML terminology:**
 
