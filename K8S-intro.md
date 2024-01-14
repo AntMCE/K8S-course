@@ -2,7 +2,6 @@
 
 
 
-k8s-course\images\Viewing Pods and Nodes _ Kubernetes.png
 
 
 
