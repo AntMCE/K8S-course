@@ -54,7 +54,7 @@ targerPort: Port app listens on in Pods/Containers
 
 
 
-## Mechanisme when you type 'kubectl get pods' and hit enter:
+## 'kubectl get pods' mechanisme:
 
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
@@ -70,6 +70,23 @@ targerPort: Port app listens on in Pods/Containers
 6. **Response**: The API server sends back a response containing information about the pods. This information includes details like pod name, status, IP address, and more.
 
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
+
+
+## Pod lifecycle:
+
+
+1. **Pending**: When a pod is created, it enters the Pending state. In this state, the Kubernetes scheduler is responsible for assigning the pod to a suitable node in the cluster. The scheduler considers factors like resource availability, node affinity, and pod anti-affinity when making this assignment.
+
+2. **Running**: Once a pod is assigned to a node, it transitions to the Running state. In this state, the pod's containers are created and started, and they begin running on the assigned node. However, the containers may still be initializing or starting up, so the pod may not be fully ready to serve traffic.
+
+3. **Succeeded**: If a pod completes its main task successfully and terminates, it enters the Succeeded state. This typically happens for batch jobs or one-time tasks. Once in the Succeeded state, the pod remains in this state until it is explicitly deleted. The resources occupied by the pod can be reclaimed by the system.
+
+4. **Failed**: If a pod encounters an error or its containers fail to start or run, it enters the Failed state. This indicates a problem with the pod's execution. The pod will not be automatically restarted, but it can be manually deleted or recreated to address the failure.
+
+5. **Unknown**: If the pod's status cannot be determined due to communication issues between the Kubernetes control plane and the pod's node, it enters the Unknown state. This can occur if the node becomes unresponsive or loses connectivity.
+
+
+
 
 
 
