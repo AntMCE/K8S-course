@@ -20,26 +20,41 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
 ## Pod failures (credit to Suman Chakraborty Senior Solution Engineer at VMware )
 
 Pods can have startup and runtime errors.
+ 
  Startup errors include:
 
  ✅ ImagePullBackoff (among the 5 common failures )
+
  ✅ ImageInspectError
+
  ✅ ErrImagePull
+
  ✅ ErrImageNeverPull
+
  ✅ RegistryUnavailable
+
  ✅ InvalidImageName
 
  Runtime errors include:
 
  ✅ CrashLoopBackOff (among the 5 common failures )
+
  ✅ RunContainerError
+
  ✅ KillContainerError
+
  ✅ VerifyNonRootError
+
  ✅ RunInitContainerError
+
  ✅ CreatePodSandboxError
+
  ✅ ConfigPodSandboxError
+
  ✅ KillPodSandboxError
+
  ✅ SetupNetworkError
+
  ✅ TeardownNetworkError
 
 ❗𝑰𝒎𝒂𝒈𝒆𝑷𝒖𝒍𝒍𝑩𝒂𝒄𝒌𝑶𝒇𝒇
@@ -48,7 +63,9 @@ Pods can have startup and runtime errors.
 There are three common culprits:
 
 ✅ The image name is invalid
+
 ✅ You specified a non-existing tag for the image.
+
 ✅ The image that you're trying to retrieve belongs to a private registry and the cluster doesn't have credentials to access it.
 
 The first two cases can be solved by correcting the image name and tag.
@@ -60,6 +77,7 @@ For the last, one should add the credentials to your private registry in a Secre
 Common causes:
 
 ✅ Mounting a not-existent volume such as ConfigMap or Secrets
+
 ✅ Mounting a read-only volume as read-write
 
 More detailed aspect can be found by describing the 'failed' pod
@@ -70,7 +88,9 @@ More detailed aspect can be found by describing the 'failed' pod
 Usually, a container can't start when:
 
 ✅ There's an error in the application that prevents it from starting.
+
 ✅ You misconfigured the container.
+
 ✅ The Liveness probe failed too many times.
 
 ❗𝑷𝒐𝒅𝒔 𝒊𝒏 𝒂 𝑷𝒆𝒏𝒅𝒊𝒏𝒈 𝒔𝒕𝒂𝒕𝒆
@@ -78,7 +98,9 @@ Usually, a container can't start when:
 ✍ Assuming that the scheduler component is running fine, here are the causes:
 
 ✅ The cluster doesn't have enough resources such as CPU and memory to run the Pod.
+
 ✅ The current Namespace has a ResourceQuota object and creating the Pod will make the Namespace go over the quota.
+
 ✅ The Pod is bound to a Pending PersistentVolumeClaim.
 
 The best option is to inspect the Events section in the "kubectl describe"
