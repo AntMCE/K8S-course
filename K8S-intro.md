@@ -27,20 +27,22 @@
 
 
 **Node**: Host server
+
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
+
 **Container**: instance of an image
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
 
 **Services**: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
-**3 types of services:**
+    3 types of services:
 
-Node Port:
+    Node Port:
 
-cluster IP:
+    cluster IP:
 
-Load balancer:
+    Load balancer:
 
 **YAML terminology:**
 
