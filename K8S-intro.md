@@ -54,7 +54,7 @@ targerPort: Port app listens on in Pods/Containers
 
 
 
-## Do you know what happens when you type 'kubectl get pods' and hit enter?
+## Mechanisme when you type 'kubectl get pods' and hit enter:
 
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
