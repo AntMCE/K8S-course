@@ -1,8 +1,14 @@
 
 
 
+![Alt text](<images/Cluster Architecture _ Kubernetes.png>)
 
-k8s-course\images\Viewing Pods and Nodes _ Kubernetes.png
+
+![Alt text](<images/access control k8s.png>)
+
+![Alt text](<images/Viewing Pods and Nodes _ Kubernetes.png>)
+
+
 
 
 
