@@ -21,6 +21,7 @@
 ![Alt text](<images/access control k8s.png>)
 
 
+# Node Vs Pod Vs Container
 
 ![Alt text](<images/Viewing Pods and Nodes _ Kubernetes.png>)
 
@@ -34,13 +35,19 @@
 **Services**: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
 **3 types of services:**
+
 Node Port:
+
 cluster IP:
+
 Load balancer:
 
 **YAML terminology:**
+
 nodePort: external port on every cluster node
+
 Port: Internal cluster port (service port)
+
 targerPort: Port app listens on in Pods/Containers
 
 
