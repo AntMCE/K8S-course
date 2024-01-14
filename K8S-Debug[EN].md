@@ -21,7 +21,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
 
 Pods can have startup and runtime errors.
  
- Startup errors include:
+ ## Startup errors include:
 
  ✅ ImagePullBackoff (among the 5 common failures )
 
@@ -35,7 +35,7 @@ Pods can have startup and runtime errors.
 
  ✅ InvalidImageName
 
- Runtime errors include:
+ ## Runtime errors include:
 
  ✅ CrashLoopBackOff (among the 5 common failures )
 
