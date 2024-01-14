@@ -70,3 +70,12 @@ targerPort: Port app listens on in Pods/Containers
 6. **Response**: The API server sends back a response containing information about the pods. This information includes details like pod name, status, IP address, and more.
 
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
+
+
+
+## Immutable and mutable fields
+
+
+Immutable fields are usually metadata fields such as the name and namespace of an object, or fields that define the fundamental behavior of an object, such as its **API version, kind**, and **resource type**. For example, the **apiVersion, kind, "metadata . name**", and "**metadata** . **namespace**" fields are typically immutable in Kubernetes objects.
+
+Mutable fields, on the other hand, are those that can be modified after an object has been created, such as the spec section of a Kubernetes object. This section typically contains configuration information such as the **number of replicas** for a deployment, the **port numbers** for a service, or the **container images** and **command** for a pod.
