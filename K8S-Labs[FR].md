@@ -3,7 +3,7 @@
     Auteur: Anthony MACLE
     Courriel: ame@k8sgo.io
     Licence: CC-BY-4.0
-    Version: 1.0
+    Version: 1.1
 
 <!--- Forked from  --->
 
