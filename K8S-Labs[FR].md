@@ -1,7 +1,7 @@
 # [Labs] Initiation à Kubernetes 
 
     Auteur: Anthony MACLE
-    Courriel: ame@k8sgo.fr
+    Courriel: ame@k8sgo.io
     Licence: CC-BY-4.0
     Version: 1.0
 
