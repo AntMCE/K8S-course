@@ -9,7 +9,10 @@ add the label protected=true to pod already having existing label type=runner.
 ```
 k -n sun label pod -l type=runner protected=true
 ```
-
+delete all pods having the app=my-app label in the default namespace
+```
+k delete pods -l app=my-app -n default
+```
 # kubectl-really-get-all is a kubectl plugin that allows you to list every resource in your cluster (yes, really).
 kubectl get all returns ONLY a list of pods, services, daemon sets, deployments, replica sets, jobs, cronjobs, and stateful sets
 
