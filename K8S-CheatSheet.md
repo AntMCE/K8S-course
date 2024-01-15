@@ -5,7 +5,7 @@ k -n sun get pod --show-labels
 ```
 k -n sun get pod -l type=runner
 ```
-add the label protected=true to pod already having existing label on it type=runner.
+add the label protected=true to pod already having existing label type=runner.
 ```
 k -n sun label pod -l type=runner protected=true
 ```
