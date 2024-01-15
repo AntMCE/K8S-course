@@ -128,7 +128,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
-- [ ] 3 versions historiques du Job doivent être conservés
+- [ ] 3 versions historiques du Job doivent être conservées
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
 ## 10 - ServiceAccount ☸️
@@ -138,22 +138,22 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
 
-## 11 - Network Policies
+## 11 - Network Policies ☸️☸️☸️
 
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
 
-## 12 - Manipuler les Pods en fonction de leur label
+## 12 - Manipuler les Pods en fonction de leur label ☸️☸️
 
 - [ ] Dans le namespace Setra
 - [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
 - [ ] Supprimer tous les pods ayant le label delete=ok
 
 
-## 13 - Deployment Rollout
+## 13 - Deployment Rollout ☸️☸️
 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Dans le namespace Axians
+- [ ] Il y un deployment nommé "payroll", il faut vérifier son statut
+- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" 
