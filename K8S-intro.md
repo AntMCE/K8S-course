@@ -3,7 +3,7 @@
 
 **kublet**: The kubelet is the primary "node agent" that runs on each node (create, edit, delete objects)
 
-**etcd**: etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines
+**etcd**: etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. This is where the desired cluster configuration state is stored. That is the most sensitive / critical element of the Cluster.
 
 **scheduler**: The Kubernetes scheduler is a control plane process which assigns Pods to Nodes
 
@@ -30,7 +30,7 @@
 
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
 
-**Container**: instance of an image
+**Container**: Instance of an image
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
 
@@ -54,7 +54,7 @@ targerPort: Port app listens on in Pods/Containers
 
 
 
-## 'kubectl get pods' mechanisme:
+## 'kubectl get pods' mechanisme
 
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
@@ -72,7 +72,7 @@ targerPort: Port app listens on in Pods/Containers
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
 
 
-## Pod lifecycle:
+## Pod lifecycle
 
 
 1. **Pending**: When a pod is created, it enters the Pending state. In this state, the Kubernetes scheduler is responsible for assigning the pod to a suitable node in the cluster. The scheduler considers factors like resource availability, node affinity, and pod anti-affinity when making this assignment.
