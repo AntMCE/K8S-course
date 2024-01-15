@@ -19,6 +19,14 @@ delete all pods having the app=my-app label in the default namespace
 ```
 k delete pods -l app=my-app -n default
 ```
+To get the list of history of a specific deployment in a specific namespace
+```
+kubectl -n setra rollout history deploy client-dep
+```
+To rollout the deployment to REVISION 1 then use this command
+```
+kubectl -n setra rollout undo deploy client-dep --to-revision=1
+```
 # kubectl-really-get-all is a kubectl plugin that allows you to list every resource in your cluster (yes, really).
 kubectl get all returns ONLY a list of pods, services, daemon sets, deployments, replica sets, jobs, cronjobs, and stateful sets
 
