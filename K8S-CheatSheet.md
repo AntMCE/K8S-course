@@ -27,6 +27,10 @@ To rollout the deployment to REVISION 1 then use this command
 ```
 kubectl -n setra rollout undo deploy client-dep --to-revision=1
 ```
+Update the image container of a deployment in a specific namespace
+```
+kubectl -n setra set image deployment/sophia nginx=nginx:1.14.2:l
+```
 # kubectl-really-get-all is a kubectl plugin that allows you to list every resource in your cluster (yes, really).
 kubectl get all returns ONLY a list of pods, services, daemon sets, deployments, replica sets, jobs, cronjobs, and stateful sets
 
