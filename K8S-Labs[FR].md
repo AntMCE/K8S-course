@@ -144,3 +144,16 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] 
 - [ ] 
 - [ ] 
+
+## 12 - Manipuler les Pods en fonction de leur label
+
+- [ ] Dans le namespace Setra
+- [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
+- [ ] Supprimer tous les pods ayant le label delete=ok
+
+
+## 13 - Deployment Rollout
+
+- [ ] 
+- [ ] 
+- [ ] 
