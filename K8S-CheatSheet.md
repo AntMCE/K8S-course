@@ -1,7 +1,10 @@
 # Everydays Command
+
+Show labels of all pods in the namespace sun
 ```
 k -n sun get pod --show-labels
 ```
+Get pods in the namespace sun with existing label type=runner
 ```
 k -n sun get pod -l type=runner
 ```
