@@ -102,7 +102,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
+## 6 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -110,7 +110,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
+## 7 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -118,7 +118,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Entendre les droits du user trainee via RBAC☸️
+## 8 - Entendre les droits du user trainee via RBAC☸️
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
