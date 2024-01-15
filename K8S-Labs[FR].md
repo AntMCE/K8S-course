@@ -124,9 +124,24 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
 - [ ] Ajouter tous les droits dans le namespace Dev
 
-## 7 - Cronjob & Job ☸️
+## 9 - Cronjob & Job ☸️
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
 - [ ] 3 versions historiques du Job doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
+
+## 10 - ServiceAccount
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+
+## 11 - Network Policies
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
