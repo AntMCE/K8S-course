@@ -6,10 +6,13 @@ k -n sun get pod --show-labels
 k -n sun get pod -l type=runner
 ```
 add the label protected=true to pod already having existing label type=runner.
+
 ```
 k -n sun label pod -l type=runner protected=true
 ```
+
 delete all pods having the app=my-app label in the default namespace
+
 ```
 k delete pods -l app=my-app -n default
 ```
