@@ -1,3 +1,15 @@
+# Everydays Command
+```
+k -n sun get pod --show-labels
+```
+```
+k -n sun get pod -l type=runner
+```
+add the label protected=true to pod already having existing label on it type=runner.
+```
+k -n sun label pod -l type=runner protected=true
+```
+
 # kubectl-really-get-all is a kubectl plugin that allows you to list every resource in your cluster (yes, really).
 kubectl get all returns ONLY a list of pods, services, daemon sets, deployments, replica sets, jobs, cronjobs, and stateful sets
 
