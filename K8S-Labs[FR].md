@@ -131,12 +131,11 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] 3 versions historiques du Job doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
-## 10 - ServiceAccount
+## 10 - ServiceAccount ☸️
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Créer un ServiceAccount nommé "SA-Monitoring"
+- [ ] Dans le namespace **votre prénom**
+- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
 
 ## 11 - Network Policies
