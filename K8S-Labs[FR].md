@@ -155,5 +155,5 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 ## 13 - Deployment Rollout ☸️☸️
 
 - [ ] Dans le namespace setra
-- [ ] Il y un deployment nommé "payroll", il faut vérifier son statut
+- [ ] Il y un deployment nommé "sophia", il faut vérifier son statut
 - [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" 
