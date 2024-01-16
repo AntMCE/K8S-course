@@ -52,36 +52,27 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
 
 ## 2 - Stockage persistant ☸️☸️☸️
 
-Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de données sur un *Stockage Persistant*.
+Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
 - [ ] Création d'un PersistentVolume
-  - [ ] Créer un **PV** nommé PV-VOTRE_TRIGRAMME ****
+  - [ ] Créer un **PV** nommé **PV-VOTRE_TRIGRAMME**
   - [ ] Le PV devra faire **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
-  - [ ] hostPath /Volumes/Data
+  - [ ] hostPath /vol/VOTRE_TRIGRAMME
   - [ ] Le *PV* n'aura pas StorageClass défini
 - [ ] Création d'un PersistentVolumeClaim
-  - [ ] Créer un **PVC** nommé PVC-VOTRE_TRIGRAMME ****
+  - [ ] Créer un **PVC** nommé **PVC-VOTRE_TRIGRAMME**
   - [ ] Le *PVC* n'aura pas StorageClass défini
   - [ ] Le *PVC* demandera une volumétrie de **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
-- [ ] Création d'un *déploiement* nommé mariadb
-  - [ ] Utilisant l'image **mariadb:latest**
-  - [ ] Utilisant le port interne **3306/TCP**
-  - [ ] Utilisant le **PVC** précédemment créé pour héberger ses bases de données
-  - [ ] Créer un compte utilisateur nommé **wordpress**
-  - [ ] Créer un mot de passe pour l'utilisateur **wordpress**
-  - [ ] Le mot de passe *root* de MariaDB devra etre généré automatiquement
-  - [ ] Créer une base de données nommée **wordpress**
-- [ ] Création d'un service nommé **mariadb**
-  - [ ] Ecoutant sur le port **56100** 
-  - [ ] Lié au déploiement **mariadb**
-  - [ ] Type de Service: **ClusterIP**
-- [ ] Création d'un *Pod* ephémaire de debug
-  - [ ] Utilisant l'image **ubuntu:latest**
-  - [ ] Installer le paquet **mariadb-client**
-  - [ ] Installer un client **mariadb**
-  - [ ] Réaliser une connexion pour valider le bon fonctionnement
+- [ ] Création d'un *déploiement*
+  - [ ] Créer un deployment nommé **app-pv-VOTRE_TRIGRAMME**
+  - [ ] Utilisant l'image **httpd:2.4.41-alpine**
+  - [ ] Utilisant le **PVC** précédemment créé
+  - [ ] Dans le namespace **votre prénom**
+  - [ ] Le volume doit monter /tmp/safari-data 
+  
+
 
 ## 3 - D
 
