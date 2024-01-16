@@ -76,13 +76,11 @@ Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de d
   - [ ] Installer un client **mariadb**
   - [ ] Réaliser une connexion pour valider le bon fonctionnement
 
-## 3 - Déploiement d'une application complexe
+## 3 - D
 
-Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 
-- [ ] Déploiement des composants dans un espace de nom
-- [ ] Correction des problèmes
-- [ ] Exposition de l'application au travers d'un **ingress**
+- [ ] 
+- [ ] 
 
 
 ## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
