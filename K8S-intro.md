@@ -5,7 +5,8 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 # How is Kubernetes organized ?
 
 **Steering Cometee**
-**SIG**
+**SIG**  **Work Groups**
+
 
 [Kubernetes Release Calendar](https://calendar.google.com/calendar/u/0/embed?src=agst.us_b07popf7t4avmt4km7eq5tk5ao@group.calendar.google.com&pli=1)
 
