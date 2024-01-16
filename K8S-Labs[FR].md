@@ -114,7 +114,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 8 - Entendre les droits du user trainee via RBAC☸️☸️
+## 8 - Etendre les droits du user trainee via RBAC☸️☸️
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
