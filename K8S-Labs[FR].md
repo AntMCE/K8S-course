@@ -48,8 +48,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Ecoutant sur le port **80**
   - [ ] Lié au deploiement **whoami**
   - [ ] Type de service: **NodePort**
-  - [ ] Récupérer le port utilisé sur la machine hôte
-- [ ] Accéder au service whoami depuis votre poste client
+- [ ] Accéder au service whoami depuis votre moteur de recherche
 
 ## 2 - Stockage persistant ☸️☸️☸️
 
