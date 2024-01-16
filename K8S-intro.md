@@ -7,7 +7,7 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 **Steering Cometee**
 **SIG**
 
-[Kubernetes Release Calendar](https://mail.google.com/mail/u/1/?ogbl#search/retex/FMfcgzGwJSGsKSvwwsFBXFtbfpZfDRJL)
+[Kubernetes Release Calendar]([https://mail.google.com/mail/u/1/?ogbl#search/retex/FMfcgzGwJSGsKSvwwsFBXFtbfpZfDRJL](https://calendar.google.com/calendar/u/0/embed?src=agst.us_b07popf7t4avmt4km7eq5tk5ao@group.calendar.google.com&pli=1))
 
 
 
