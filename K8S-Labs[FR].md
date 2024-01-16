@@ -61,12 +61,12 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   - [ ] hostPath /vol/votre_trigramme
   - [ ] Le *PV* n'aura pas StorageClass défini
 - [ ] Création d'un PersistentVolumeClaim
-  - [ ] Créer un **PVC** nommé **pvc-votre_trigramm**
+  - [ ] Créer un **PVC** nommé **pvc-votre_trigramme**
   - [ ] Le *PVC* n'aura pas StorageClass défini
   - [ ] Le *PVC* demandera une volumétrie de **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
 - [ ] Création d'un *déploiement*
-  - [ ] Créer un deployment nommé **app-pv-votre_trigramm**
+  - [ ] Créer un deployment nommé **app-pv-votre_trigramme**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Utilisant le **PVC** précédemment créé
   - [ ] Dans le namespace **votre prénom**
