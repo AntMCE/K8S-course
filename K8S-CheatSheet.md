@@ -1,5 +1,9 @@
 # Everydays Command
 
+Create a deployment yaml deployment template
+```
+k create deploy DEPLOYMENT_NAME --image=containous/whoami --port=80 --replicas=3 --dry-run=client -o yaml > deploy.yml
+```
 Show labels of all pods in the namespace sun
 ```
 k -n sun get pod --show-labels
