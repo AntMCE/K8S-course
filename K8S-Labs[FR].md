@@ -36,7 +36,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
         https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
 
 
-## 1 - Mon premier déploiement Kubernetes ☸️☸️ 
+## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
@@ -50,7 +50,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 2 - Stockage persistant ☸️☸️☸️
+## 3 - Stockage persistant ☸️☸️☸️
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -58,7 +58,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   - [ ] Créer un **PV** nommé **pv-votre_trigramme**
   - [ ] Le PV devra faire **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
-  - [ ] hostPath /vol/VOTRE_TRIGRAMME
+  - [ ] hostPath /vol/votre_trigramme
   - [ ] Le *PV* n'aura pas StorageClass défini
 - [ ] Création d'un PersistentVolumeClaim
   - [ ] Créer un **PVC** nommé **pvc-votre_trigramm**
