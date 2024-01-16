@@ -55,18 +55,18 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
 - [ ] Création d'un PersistentVolume
-  - [ ] Créer un **PV** nommé **PV-VOTRE_TRIGRAMME**
+  - [ ] Créer un **PV** nommé **pv-votre_trigramme**
   - [ ] Le PV devra faire **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
   - [ ] hostPath /vol/VOTRE_TRIGRAMME
   - [ ] Le *PV* n'aura pas StorageClass défini
 - [ ] Création d'un PersistentVolumeClaim
-  - [ ] Créer un **PVC** nommé **PVC-VOTRE_TRIGRAMME**
+  - [ ] Créer un **PVC** nommé **pvc-votre_trigramm**
   - [ ] Le *PVC* n'aura pas StorageClass défini
   - [ ] Le *PVC* demandera une volumétrie de **1Gi**
   - [ ] Son accessMode sera ReadWriteOnce
 - [ ] Création d'un *déploiement*
-  - [ ] Créer un deployment nommé **app-pv-VOTRE_TRIGRAMME**
+  - [ ] Créer un deployment nommé **app-pv-votre_trigramm**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Utilisant le **PVC** précédemment créé
   - [ ] Dans le namespace **votre prénom**
