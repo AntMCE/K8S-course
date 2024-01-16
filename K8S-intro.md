@@ -8,7 +8,7 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 |  [**Steering Cometee**](https://github.com/kubernetes/steering#steering-committee) |  
 |-----------------------|             
-| [**SIG**](sig-list.md)               | 
+| [**SIG**](https://github.com/kubernetes/community/blob/master/sig-list.md)               | 
 | **Work Groups**       |
 
       
