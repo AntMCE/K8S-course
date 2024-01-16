@@ -154,6 +154,8 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 
 ## 13 - Deployment Rollout ☸️☸️
 
-- [ ] Dans le namespace setra
-- [ ] Il y un deployment nommé "sophia", il faut vérifier son statut
-- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" 
+- [ ] Dans le namespace **votre prénom**
+- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
+- [ ] Vérifier l'hitorique de rollout deployment
+- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la version
+- [ ] Nous savons que le déploiement initial fonctionnait correctement
