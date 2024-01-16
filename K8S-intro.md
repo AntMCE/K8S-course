@@ -4,10 +4,14 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 # How is Kubernetes organized ?
 
-**Steering Cometee**
+
 
 **SIG**  |  **Work Groups** (subjet accross different SIG's)
 
+|  **Steering Cometee** |  
+|-----------------------|             
+| **SIG**               | 
+| **Work Groups**       |
 
       
                     
