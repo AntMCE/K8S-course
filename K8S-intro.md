@@ -1,3 +1,15 @@
+# How is Kubernetes doing ?
+
+https://www.cncf.io/reports/kubernetes-project-journey-report/
+
+# How is Kubernetes organized ?
+
+**Steering Cometee**
+**SIG**
+
+[Kubernetes Release Calendar](https://mail.google.com/mail/u/1/?ogbl#search/retex/FMfcgzGwJSGsKSvwwsFBXFtbfpZfDRJL)
+
+
 
 # Kubernetes Archtiecture
 
