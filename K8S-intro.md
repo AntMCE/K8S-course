@@ -25,7 +25,7 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 **etcd**: etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. This is where the desired cluster configuration state is stored. That is the most sensitive / critical element of the Cluster.
 
-**scheduler**: (Fliter & Score process) The Kubernetes scheduler is a control plane process which assigns Pods to Nodes
+**scheduler**: (Fliter & Score processes) The Kubernetes scheduler is a control plane process which assigns Pods to Nodes
 
 **kube-api-server**: The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact
 
