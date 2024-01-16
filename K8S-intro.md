@@ -16,12 +16,12 @@
 ![Alt text](<images/Cluster Architecture _ Kubernetes.png>)
 
 
-# Inrteracting with a K8S Cluster 
+## Inrteracting with a K8S Cluster 
 
 ![Alt text](<images/access control k8s.png>)
 
 
-# Node Vs Pod Vs Container
+## Node Vs Pod Vs Container
 
 ![Alt text](<images/Viewing Pods and Nodes _ Kubernetes.png>)
 
@@ -34,7 +34,7 @@
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
 
-# Services
+## Services
 Services: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
 *3 types of services:*
