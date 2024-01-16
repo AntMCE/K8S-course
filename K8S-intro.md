@@ -10,7 +10,8 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 |     Steering Cometee     |  
 |--------------------------|
-|  SIG's   | Working Groups|         
+|  SIG's   | Working Groups|  
+|          |               |
       
                     
 
