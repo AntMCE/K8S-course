@@ -19,7 +19,7 @@ kubectl describe pod <pod-name> -n <namespace> | grep -A20 "Events:"
 ```
 ## Pod failures (credit to Suman Chakraborty Senior Solution Engineer at VMware )
 
-Pods can have startup and runtime errors.
+Pods can have **startup** and **runtime** errors.
  
  ## Startup errors include:
 
