@@ -74,7 +74,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 3 - D
+## 3 - Scheduler un Pod manuellement [ Scénario de Scheduler KO ]
 
 
 - [ ] 
