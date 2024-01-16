@@ -4,7 +4,7 @@
 ## [K8SGPT](https://k8sgpt.ai/)
 K8sGPT is a tool for scanning your kubernetes clusters, diagnosing and triaging issues in simple english.
 
-As for now, JAN 2024, the project seems to be at a very early stage. No real benefit were found during testing. While the tools is pretty good at detecting issues, it sometimes fails to give relavant debuging tip in order to fixe issues. As of today, having a deep understanding of K8S seems to be the best option to efficently solve issues.
+As for now, JAN 2024, the project seems to be at a very early stage. No real benefit were found during testing. While the tools is pretty good at detecting issues, it sometimes fails to give relavant debuging tip in order to fixe issues. As of today, having a deep understanding of K8S seems to be the best option to efficently solve issues. Anthony.
 
 ## [PredictKube](https://keda.sh/docs/2.12/scalers/predictkube/)
 PredictKube is an AI-based predictive autoscaler for KEDA.
