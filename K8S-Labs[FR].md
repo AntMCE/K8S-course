@@ -32,7 +32,8 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Le conteneur doit être nommé **pod1-container**
   - [ ] Dans le namespace **votre prénom**
-  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
+  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** indice: Il faut ajouter une *tolleration* et un spécifier un *nodeName*
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
 
 
 ## 1 - Mon premier déploiement Kubernetes ☸️☸️ 
