@@ -108,7 +108,7 @@ Usually, a container can't start when:
 
 The best option is to inspect the Events section in the "kubectl describe"
 
-## 5 common k8s failures and how to fix them
+## 5 common k8s failures
 
 𝟭) 𝗜𝗺𝗮𝗴𝗲-𝗽𝘂𝗹𝗹 𝗯𝗮𝗰𝗸 𝗼𝗳𝗳 ~ Check for 𝙄𝙢𝙖𝙜𝙚 𝙥𝙪𝙡𝙡 𝙥𝙤𝙡𝙞𝙘𝙮 , 𝙥𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙩𝙤 𝙥𝙪𝙡𝙡 𝙛𝙧𝙤𝙢 𝙧𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮,𝙘𝙤𝙧𝙧𝙚𝙘𝙩 𝙞𝙢𝙖𝙜𝙚 𝙣𝙖𝙢𝙚 𝙖𝙡𝙤𝙣𝙜 𝙬𝙞𝙩𝙝 𝙩𝙖𝙜.
 
