@@ -54,10 +54,17 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
 
 Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de données sur un *Stockage Persistant*.
 
-- [ ] Création d'un PersistentVolumeClaim pour MariaDB
-  - [ ] Créer un **PVC** nommé **mariadb**
-  - [ ] Le *PVC* utilisera la classe de Stockage par defaut
-  - [ ] Le *PVC* demandera une volumétrie de **1Go**
+- [ ] Création d'un PersistentVolume
+  - [ ] Créer un **PV** nommé PV-VOTRE_TRIGRAMME ****
+  - [ ] Le PV devra faire **1Gi**
+  - [ ] Son accessMode sera ReadWriteOnce
+  - [ ] hostPath /Volumes/Data
+  - [ ] Le *PV* n'aura pas StorageClass défini
+- [ ] Création d'un PersistentVolumeClaim
+  - [ ] Créer un **PVC** nommé PVC-VOTRE_TRIGRAMME ****
+  - [ ] Le *PVC* n'aura pas StorageClass défini
+  - [ ] Le *PVC* demandera une volumétrie de **1Gi**
+  - [ ] Son accessMode sera ReadWriteOnce
 - [ ] Création d'un *déploiement* nommé mariadb
   - [ ] Utilisant l'image **mariadb:latest**
   - [ ] Utilisant le port interne **3306/TCP**
