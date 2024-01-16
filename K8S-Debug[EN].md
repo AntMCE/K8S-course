@@ -15,7 +15,7 @@ After that, you should see that the Namespace can now be successfully deleted wi
 
 ## Get pod Events:
 ```
-kubectl describe pod <pod-name> -n <namespace> | grep -A5 "Events:
+kubectl describe pod <pod-name> -n <namespace> | grep -A20 "Events:"
 ```
 ## Pod failures (credit to Suman Chakraborty Senior Solution Engineer at VMware )
 
