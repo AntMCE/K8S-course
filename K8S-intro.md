@@ -34,7 +34,8 @@
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
 
-**Services**: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
+# Services
+Services: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
 *3 types of services:*
 
