@@ -9,7 +9,7 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 **SIG**  |  **Work Groups** (subjet accross different SIG's)
 
 |     Steering Cometee     |  
-|--------------------------|
+|----------|---------------|
 |  SIG's   | Working Groups|  
 |          |               |
       
