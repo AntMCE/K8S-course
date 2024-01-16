@@ -28,7 +28,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 ## 1 - Mon premier pod Kubernetes ☸️☸️ 
 
-- [ ] Création d'un *pod* nommé pod1
+- [ ] Création d'un *pod* nommé **votre trigamme**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Le conteneur doit être nommé **pod1-container**
   - [ ] Dans le namespace **votre prénom**
