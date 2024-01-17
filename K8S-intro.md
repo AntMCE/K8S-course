@@ -104,6 +104,14 @@ targerPort: Port app listens on in Pods/Containers
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
 
 
+## Pod creation mechanisme
+
+
+
+
+
+
+
 ## Pod lifecycle
 
 
