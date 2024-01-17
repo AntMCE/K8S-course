@@ -18,7 +18,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 | Adresse IP | livré aux participants |
 | Kubeconfig | livré aux participants |
 
-## La difficulté des excercices est exprimée en nombre de Wheel:
+## La difficulté des excercices est exprimée en nombre de Wheel
 
 ☸️ -> Facile
 
@@ -28,14 +28,15 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 ## 1 - Mon premier pod Kubernetes ☸️☸️ 
 
-- [ ] Création d'un *pod* nommé pod1
+- [ ] Création d'un *pod* nommé **votre trigamme**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Le conteneur doit être nommé **pod1-container**
   - [ ] Dans le namespace **votre prénom**
-  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus**
+  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** indice: Il faut ajouter une *toleration* et un spécifier un *nodeName*
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
 
 
-## 1 - Mon premier déploiement Kubernetes ☸️☸️ 
+## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
@@ -47,42 +48,37 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Ecoutant sur le port **80**
   - [ ] Lié au deploiement **whoami**
   - [ ] Type de service: **NodePort**
-  - [ ] Récupérer le port utilisé sur la machine hôte
-- [ ] Accéder au service whoami depuis votre poste client
+- [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 2 - Stockage persistant ☸️☸️☸️
+## 3 - Stockage persistant ☸️☸️
 
-Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de données sur un *Stockage Persistant*.
+Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
-- [ ] Création d'un PersistentVolumeClaim pour MariaDB
-  - [ ] Créer un **PVC** nommé **mariadb**
-  - [ ] Le *PVC* utilisera la classe de Stockage par defaut
-  - [ ] Le *PVC* demandera une volumétrie de **1Go**
-- [ ] Création d'un *déploiement* nommé mariadb
-  - [ ] Utilisant l'image **mariadb:latest**
-  - [ ] Utilisant le port interne **3306/TCP**
-  - [ ] Utilisant le **PVC** précédemment créé pour héberger ses bases de données
-  - [ ] Créer un compte utilisateur nommé **wordpress**
-  - [ ] Créer un mot de passe pour l'utilisateur **wordpress**
-  - [ ] Le mot de passe *root* de MariaDB devra etre généré automatiquement
-  - [ ] Créer une base de données nommée **wordpress**
-- [ ] Création d'un service nommé **mariadb**
-  - [ ] Ecoutant sur le port **56100** 
-  - [ ] Lié au déploiement **mariadb**
-  - [ ] Type de Service: **ClusterIP**
-- [ ] Création d'un *Pod* ephémaire de debug
-  - [ ] Utilisant l'image **ubuntu:latest**
-  - [ ] Installer le paquet **mariadb-client**
-  - [ ] Installer un client **mariadb**
-  - [ ] Réaliser une connexion pour valider le bon fonctionnement
+- [ ] Création d'un PersistentVolume
+  - [ ] Créer un **PV** nommé **pv-votre_trigramme**
+  - [ ] Le PV devra faire **1Gi**
+  - [ ] Son accessMode sera ReadWriteOnce
+  - [ ] hostPath /vol/votre_trigramme
+  - [ ] Le *PV* n'aura pas StorageClass défini
+- [ ] Création d'un PersistentVolumeClaim
+  - [ ] Créer un **PVC** nommé **pvc-votre_trigramme**
+  - [ ] Le *PVC* n'aura pas StorageClass défini
+  - [ ] Le *PVC* demandera une volumétrie de **1Gi**
+  - [ ] Son accessMode sera ReadWriteOnce
+- [ ] Création d'un *déploiement*
+  - [ ] Créer un deployment nommé **app-pv-votre_trigramme**
+  - [ ] Utilisant l'image **httpd:2.4.41-alpine**
+  - [ ] Utilisant le **PVC** précédemment créé
+  - [ ] Dans le namespace **votre prénom**
+  - [ ] Le volume doit monter /tmp/safari-data 
+  
 
-## 3 - Déploiement d'une application complexe
 
-Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
+## 3 - Scheduler un Pod manuellement [ Scénario de Scheduler KO ]
 
-- [ ] Déploiement des composants dans un espace de nom
-- [ ] Correction des problèmes
-- [ ] Exposition de l'application au travers d'un **ingress**
+
+- [ ] 
+- [ ] 
 
 
 ## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
@@ -102,7 +98,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
+## 6 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -110,7 +106,7 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
+## 7 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -118,9 +114,44 @@ Source: [Gist](https://gist.github.com/davoult/9fb6f9f604bf2da2a060eeb91e69c4bb)
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 5 - Entendre les droits du user trainee via RBAC☸️
+## 8 - Etendre les droits du user trainee via RBAC☸️☸️
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
 - [ ] Ajouter tous les droits dans le namespace Dev
 
+## 9 - Cronjob & Job ☸️
+
+- [ ] Créer un Cronjob qui instancie l'image XXX
+- [ ] Dans le namespace **votre prénom**
+- [ ] 3 versions historiques du Job doivent être conservées
+- [ ] Un job doit être déclenché manuellement depuis ce Cronjob
+
+## 10 - ServiceAccount ☸️
+
+- [ ] Créer un ServiceAccount nommé "SA-Monitoring"
+- [ ] Dans le namespace **votre prénom**
+- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
+
+
+## 11 - Network Policies ☸️☸️☸️
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+## 12 - Administrer les Pods en fonction de leur label ☸️☸️
+
+- [ ] Dans le namespace **votre prénom**
+- [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
+- [ ] Supprimer tous les pods ayant le label delete=ok
+
+
+## 13 - Deployment Rollout ☸️☸️
+
+- [ ] Dans le namespace **votre prénom**
+- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
+- [ ] Vérifier l'hitorique de rollout deployment
+- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
+- [ ] Nous savons que le déploiement initial fonctionnait correctement

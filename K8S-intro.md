@@ -1,11 +1,31 @@
+# How is Kubernetes doing ?
+
+https://www.cncf.io/reports/kubernetes-project-journey-report/
+
+# How is Kubernetes organized ?
+
+
+
+|  [**Steering Cometee**](https://github.com/kubernetes/steering#steering-committee) |  
+|-----------------------|             
+| [**SIG**](https://github.com/kubernetes/community/blob/master/sig-list.md)               | 
+| **Work Groups**       |
+
+      
+                    
+
+
+[Kubernetes Release Calendar](https://calendar.google.com/calendar/u/0/embed?src=agst.us_b07popf7t4avmt4km7eq5tk5ao@group.calendar.google.com&pli=1)
+
+
 
 # Kubernetes Archtiecture
 
 **kublet**: The kubelet is the primary "node agent" that runs on each node (create, edit, delete objects)
 
-**etcd**: etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines
+**etcd**: etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. This is where the desired cluster configuration state is stored. That is the most sensitive / critical element of the Cluster.
 
-**scheduler**: The Kubernetes scheduler is a control plane process which assigns Pods to Nodes
+**scheduler**: (Fliter & Score processes) The Kubernetes scheduler is a control plane process which assigns Pods to Nodes
 
 **kube-api-server**: The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact
 
@@ -16,12 +36,12 @@
 ![Alt text](<images/Cluster Architecture _ Kubernetes.png>)
 
 
-# Inrteracting with a K8S Cluster 
+## Inrteracting with a K8S Cluster 
 
 ![Alt text](<images/access control k8s.png>)
 
 
-# Node Vs Pod Vs Container
+## Node Vs Pod Vs Container
 
 ![Alt text](<images/Viewing Pods and Nodes _ Kubernetes.png>)
 
@@ -30,11 +50,12 @@
 
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
 
-**Container**: instance of an image
+**Container**: Instance of an image
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
 
-**Services**: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
+## Services
+Services: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
 *3 types of services:*
 
@@ -54,7 +75,18 @@ targerPort: Port app listens on in Pods/Containers
 
 
 
-## 'kubectl get pods' mechanisme:
+## [API versioning](https://kubernetes.io/docs/reference/using-api/#api-versioning)
+
+**Alpha**: For use only in short-lived testing
+
+**Beta**: The software is not recommended for production uses
+
+**Stable**: Production ready
+
+
+
+
+## 'kubectl get pods' mechanisme
 
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
@@ -72,7 +104,7 @@ targerPort: Port app listens on in Pods/Containers
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
 
 
-## Pod lifecycle:
+## Pod lifecycle
 
 
 1. **Pending**: When a pod is created, it enters the Pending state. In this state, the Kubernetes scheduler is responsible for assigning the pod to a suitable node in the cluster. The scheduler considers factors like resource availability, node affinity, and pod anti-affinity when making this assignment.
@@ -92,7 +124,12 @@ targerPort: Port app listens on in Pods/Containers
 
 ## Immutable and mutable fields
 
-
 Immutable fields are usually metadata fields such as the name and namespace of an object, or fields that define the fundamental behavior of an object, such as its **API version, kind**, and **resource type**. For example, the **apiVersion, kind, "metadata . name**", and "**metadata** . **namespace**" fields are typically immutable in Kubernetes objects.
 
 Mutable fields, on the other hand, are those that can be modified after an object has been created, such as the spec section of a Kubernetes object. This section typically contains configuration information such as the **number of replicas** for a deployment, the **port numbers** for a service, or the **container images** and **command** for a pod.
+
+
+
+## Taints, Tolerations & Node affinity
+
+
