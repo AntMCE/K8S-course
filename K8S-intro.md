@@ -81,7 +81,7 @@ targerPort: Port app listens on in Pods/Containers
 
 **Beta**: The software is not recommended for production uses
 
-**Stable**: Production ready
+**Stable**: Production ready - The version name is vX where X is an integer.
 
 ![Alt text](<images/pod api stable.png>)
 
