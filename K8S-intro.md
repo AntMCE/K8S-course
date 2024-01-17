@@ -83,7 +83,7 @@ targerPort: Port app listens on in Pods/Containers
 
 **Stable**: Production ready
 
-![Alt text](<images/pod_api_stable.png>)
+![Alt text](<images/pod api stable.png>)
 
 
 ## 'kubectl get pods' mechanisme
