@@ -17,10 +17,16 @@ add the label protected=true to pod already having existing label type=runner.
 ```
 k -n sun label pod -l type=runner protected=true 
 ```
-Execute a curl from an aphemeral pod
+Execute a curl from an ephemeral pod
 ```
 k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://svc-pod.axians:80
 ```
+Start a debug pod which get deleted on exit
+
+```
+kubectl run debug --rm -ti --restart=Never --image=fedora:latest /bin/bash
+```
+
 delete all pods having the app=my-app label in the default namespace
 
 ```
