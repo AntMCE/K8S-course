@@ -75,6 +75,17 @@ targerPort: Port app listens on in Pods/Containers
 
 
 
+## [API versioning](https://kubernetes.io/docs/reference/using-api/#api-versioning)
+
+**Alpha**: For use only in short-lived testing
+
+**Beta**: The software is not recommended for production uses
+
+**Stable**: Production ready
+
+
+
+
 ## 'kubectl get pods' mechanisme
 
 
