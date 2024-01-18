@@ -67,9 +67,9 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   - [ ] Son accessMode sera ReadWriteOnce
 - [ ] Création d'un *déploiement*
   - [ ] Créer un deployment nommé **app-pv-votre_trigramme**
+  - [ ] Dans le namespace **votre prénom**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Utilisant le **PVC** précédemment créé
-  - [ ] Dans le namespace **votre prénom**
   - [ ] Le volume doit monter /tmp/safari-data 
   
 
@@ -98,15 +98,8 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Chercher une version spécifique d'un repo Helm
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
-## 6 - Debuger le deployment "setra-app" dans le namespace setra ☸️☸️☸️
 
-- [ ] Lister les applications installées via Helm
-- [ ] Mettre à jour les repo Helm
-- [ ] Recherche des matrices de compatibilité
-- [ ] Chercher une version spécifique d'un repo Helm
-- [ ] Upgrader une application installé via Helm (avec version spécifique)
-
-## 7 - Debuger le deployment "axians-app" dans le namespace axians ☸️☸️☸️
+## 7 - Debuger le deployment "bugged-app" dans le namespace dev ☸️☸️☸️
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm

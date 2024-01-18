@@ -4,6 +4,8 @@ Things to take in consideration when administering large K8S clusters (hundreds 
 
 ## EndpointSlices
 
+https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/
+
 
 
 
