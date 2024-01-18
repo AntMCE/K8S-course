@@ -107,7 +107,7 @@ targerPort: Port app listens on in Pods/Containers
 ## Pod creation mechanisme
 
 
-
+TO BE COMPLETED 
 
 
 
