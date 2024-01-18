@@ -129,7 +129,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 ## 10 - ServiceAccount ☸️
 
-- [ ] Créer un ServiceAccount nommé "SA-Monitoring"
+- [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
 - [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
