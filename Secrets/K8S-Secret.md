@@ -29,7 +29,6 @@ spec:
             secretKeyRef:
               name: backend-user
               key: backend-username
-
 ```
 
 Use envFrom to define **all of the Secret's** data as container environment variables. The key from the Secret becomes the environment variable name in the Pod.
@@ -42,5 +41,4 @@ spec:
     envFrom:
     - secretRef:
         name: test-secret
-
 ```
