@@ -136,10 +136,10 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 ## 11 - Network Policies ☸️☸️☸️
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Appliquer une Network Policiy sur le pod **sensitive-pod**
+- [ ] Identifier le namespace dans lequel se trouve le pod
+- [ ] La policy doit refuser toutes les connexions entrentes
+- [ ] La policy autorise le flux sortant uniquement vers 
 
 ## 12 - Administrer les Pods en fonction de leur label ☸️☸️
 
