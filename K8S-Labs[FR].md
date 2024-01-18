@@ -138,8 +138,9 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 - [ ] Appliquer une Network Policiy sur le pod **sensitive-pod**
 - [ ] Identifier le namespace dans lequel se trouve le pod
-- [ ] La policy autorise les connexions entrente (ingress) seulement depuis le pod "safe-pod"
-- [ ] La policy autorise le flux sortant uniquement vers 8.8.8.
+- [ ] La policy autorise les connexions entrente (Ingress) seulement depuis le pod **safe-pod**
+- [ ] Aucune règle n'est a appliquer pour le flux soirtant (Egress)
+- [ ] Tester la règle depuis le pod **safe-pod** via la commande: *k -n setra exec -it safe-pod -- curl http://svc-pod.axians:80*
 
 ## 12 - Administrer les Pods en fonction de leur label ☸️☸️
 
