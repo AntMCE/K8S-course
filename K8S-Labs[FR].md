@@ -92,13 +92,11 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
 
-## 6 - Debuger le deployment "bugged-app" dans le namespace dev ☸️☸️☸️
+## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️
 
-- [ ] Lister les applications installées via Helm
-- [ ] Mettre à jour les repo Helm
-- [ ] Recherche des matrices de compatibilité
-- [ ] Chercher une version spécifique d'un repo Helm
-- [ ] Upgrader une application installé via Helm (avec version spécifique)
+- [ ] Dans le namespace *dev*
+- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
+- [ ] Corriger le problème
 
 ## 7 - Etendre les droits du user trainee via RBAC☸️☸️
 
