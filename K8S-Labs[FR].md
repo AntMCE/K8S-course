@@ -74,11 +74,16 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 3 - Scheduler un Pod manuellement [ Scénario de Scheduler KO ]
+## 3 - Scheduler un Pod manuellement [ Scénario de Scheduler KO ]  
 
 
-- [ ] 
-- [ ] 
+- [ ] ssh sur le Noeud master
+- [ ] Stopper le kube-scheduler  --> *cd /etc/kubernetes/manifests/* -->  *mv kube-scheduler.yaml ..*
+- [ ] Créer un Pod **manual-scheduler**
+- [ ] Dans le namespace par défaut
+- [ ] créer un Pod avec l'image httpd:2.4-alpine --> *k run manual-schedule --image=httpd:2.4-alpine*
+- [ ] Exporter la configuration du Pod en manifeste YAML pour pouvoir le modifier --> *k get pod manual-schedule -o yaml > manual-scheduler.yaml*
+- [ ] Ajouter les éléments necessaires pour pouvoir schéduler le Pod.  
 
 
 ## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
