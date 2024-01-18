@@ -129,17 +129,19 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 ## 10 - ServiceAccount ☸️
 
-- [ ] Créer un ServiceAccount nommé "SA-Monitoring"
+- [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
 - [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
 
 ## 11 - Network Policies ☸️☸️☸️
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Appliquer une Network Policiy sur le pod **sensitive-pod**
+- [ ] Identifier le namespace dans lequel se trouve le pod
+- [ ] La policy autorise les connexions entrente (Ingress) seulement depuis le pod **safe-pod**
+- [ ] Aucune règle n'est a appliquer pour le flux soirtant (Egress)
+- [ ] Tester la règle depuis un pod de test lancé dans le namespace par défaut: *k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://svc-pod.axians:80*
+- [ ] Tester la règle depuis le pod **safe-pod** via la commande: *k -n setra exec -it safe-pod -- curl http://svc-pod.axians:80*
 
 ## 12 - Administrer les Pods en fonction de leur label ☸️☸️
 

@@ -81,9 +81,9 @@ targerPort: Port app listens on in Pods/Containers
 
 **Beta**: The software is not recommended for production uses
 
-**Stable**: Production ready
+**Stable**: Production ready - The version name is vX where X is an integer.
 
-
+![Alt text](<images/pod api stable.png>)
 
 
 ## 'kubectl get pods' mechanisme
@@ -102,6 +102,14 @@ targerPort: Port app listens on in Pods/Containers
 6. **Response**: The API server sends back a response containing information about the pods. This information includes details like pod name, status, IP address, and more.
 
 7. **Display**: kubectl formats the response and displays it in the terminal. By default, it shows the pod names, their statuses, and other basic information.
+
+
+## Pod creation mechanisme
+
+
+
+
+
 
 
 ## Pod lifecycle
