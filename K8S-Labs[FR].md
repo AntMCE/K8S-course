@@ -38,7 +38,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 <details><summary>Hint</summary>
 <p>
 
-```bash
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -50,10 +50,8 @@ spec:
     ports:
     - containerPort: 80
 ```
-
 </p>
-or
-<p>
+</details>
 
 ## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
