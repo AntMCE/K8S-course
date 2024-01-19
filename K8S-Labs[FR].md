@@ -35,6 +35,10 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
   - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** indice: Il faut ajouter une *toleration* et un spécifier un *nodeName*
         https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
 
+<details><summary>Hint</summary>
+<p>
+
+
 
 ## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
