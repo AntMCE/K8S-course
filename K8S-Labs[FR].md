@@ -38,7 +38,22 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 <details><summary>Hint</summary>
 <p>
 
+```bash
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+```
 
+</p>
+or
+<p>
 
 ## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
