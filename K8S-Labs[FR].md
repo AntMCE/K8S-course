@@ -67,7 +67,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 3 - Stockage persistant ☸️☸️
+## 3 - Stockage persistant ☸️☸️☸️
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -89,15 +89,6 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   - [ ] Utilisant le **PVC** précédemment créé
   - [ ] Le volume doit monter /tmp/safari-data 
   
-
-
-## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
-
- 
-- [ ] Skew Policy à connaitre https://kubernetes.io/releases/version-skew-policy/
-- [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
-- [ ] Mise à jour du noeud Master
-- [ ] Mise à jour des noeuds Worker
 
 
 ## 5 - Initiation à Helm ☸️
@@ -170,4 +161,12 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Dans le namespace par défaut
 - [ ] créer un Pod avec l'image httpd:2.4-alpine --> *k run manual-schedule --image=httpd:2.4-alpine*
 - [ ] Exporter la configuration du Pod en manifeste YAML pour pouvoir le modifier --> *k get pod manual-schedule -o yaml > manual-scheduler.yaml*
-- [ ] Ajouter les éléments necessaires pour pouvoir schéduler le Pod.  
+- [ ] Ajouter les éléments necessaires pour pouvoir schéduler le Pod.
+
+
+##  Mise à jour d'un cluster K8S via Kubeadm 
+
+- [ ] Skew Policy à connaitre https://kubernetes.io/releases/version-skew-policy/
+- [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
+- [ ] Mise à jour du noeud Master
+- [ ] Mise à jour des noeuds Worker
