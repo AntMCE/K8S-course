@@ -1,4 +1,4 @@
-# [Labs] Initiation à Kubernetes 
+# [Lab] Initiation à Kubernetes 
 
     Auteur: Anthony MACLE
     Courriel: ame@k8sgo.io
