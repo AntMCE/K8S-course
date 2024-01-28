@@ -1,4 +1,4 @@
-# [Labs] Initiation à Kubernetes 
+# [Lab] Initiation à Kubernetes 
 
     Auteur: Anthony MACLE
     Courriel: ame@k8sgo.io
@@ -32,9 +32,26 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
   - [ ] Le conteneur doit être nommé **pod1-container**
   - [ ] Dans le namespace **votre prénom**
-  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** indice: Il faut ajouter une *toleration* et un spécifier un *nodeName*
+  - [ ] Le pod doit seulement être déployé sur le noeud Master  **Point Bonus** indice: Il faut ajouter une *toleration* et spécifier un *nodeName*
         https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodename / https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
 
+<details><summary>Aide</summary>
+<p>
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+```
+</p>
+</details>
 
 ## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
 
@@ -50,7 +67,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 3 - Stockage persistant ☸️☸️
+## 3 - Stockage persistant ☸️☸️☸️
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -74,22 +91,6 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 3 - Scheduler un Pod manuellement [ Scénario de Scheduler KO ]
-
-
-- [ ] 
-- [ ] 
-
-
-## 4 - Mise à jour d'un cluster K8S via Kubeadm ☸️☸️ 
-
- 
-- [ ] Skew Policy à connaitre https://kubernetes.io/releases/version-skew-policy/
-- [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
-- [ ] Mise à jour du noeud Master
-- [ ] Mise à jour des noeuds Worker
-
-
 ## 5 - Initiation à Helm ☸️
 
 - [ ] Lister les applications installées via Helm
@@ -99,35 +100,33 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
 
-## 7 - Debuger le deployment "bugged-app" dans le namespace dev ☸️☸️☸️
+## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️
 
-- [ ] Lister les applications installées via Helm
-- [ ] Mettre à jour les repo Helm
-- [ ] Recherche des matrices de compatibilité
-- [ ] Chercher une version spécifique d'un repo Helm
-- [ ] Upgrader une application installé via Helm (avec version spécifique)
+- [ ] Dans le namespace *dev*
+- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
+- [ ] Corriger le problème
 
-## 8 - Etendre les droits du user trainee via RBAC☸️☸️
+## 7 - Etendre les droits du user trainee via RBAC☸️☸️
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
 - [ ] Ajouter tous les droits dans le namespace Dev
 
-## 9 - Cronjob & Job ☸️
+## 8 - Cronjob & Job ☸️
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
 - [ ] 3 versions historiques du Job doivent être conservées
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
-## 10 - ServiceAccount ☸️
+## 9 - ServiceAccount ☸️
 
 - [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
 - [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
 
-## 11 - Network Policies ☸️☸️☸️
+## 10 - Network Policies ☸️☸️☸️
 
 - [ ] Appliquer une Network Policiy sur le pod **sensitive-pod**
 - [ ] Identifier le namespace dans lequel se trouve le pod
@@ -136,17 +135,38 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Tester la règle depuis un pod de test lancé dans le namespace par défaut: *k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://svc-pod.axians:80*
 - [ ] Tester la règle depuis le pod **safe-pod** via la commande: *k -n setra exec -it safe-pod -- curl http://svc-pod.axians:80*
 
-## 12 - Administrer les Pods en fonction de leur label ☸️☸️
+## 11 - Administrer les Pods en fonction de leur label ☸️☸️
 
 - [ ] Dans le namespace **votre prénom**
 - [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
 - [ ] Supprimer tous les pods ayant le label delete=ok
 
 
-## 13 - Deployment Rollout ☸️☸️
+## 12 - Deployment Rollout ☸️☸️
 
 - [ ] Dans le namespace **votre prénom**
 - [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
 - [ ] Vérifier l'hitorique de rollout deployment
 - [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
 - [ ] Nous savons que le déploiement initial fonctionnait correctement
+
+
+# Pour aller plus loins 💡
+
+## Scheduler un Pod manuellement [ Scénario de Scheduler KO ]  
+
+- [ ] ssh sur le Noeud master
+- [ ] Stopper le kube-scheduler  --> *cd /etc/kubernetes/manifests/* -->  *mv kube-scheduler.yaml ..*
+- [ ] Créer un Pod **manual-scheduler**
+- [ ] Dans le namespace par défaut
+- [ ] créer un Pod avec l'image httpd:2.4-alpine --> *k run manual-schedule --image=httpd:2.4-alpine*
+- [ ] Exporter la configuration du Pod en manifeste YAML pour pouvoir le modifier --> *k get pod manual-schedule -o yaml > manual-scheduler.yaml*
+- [ ] Ajouter les éléments necessaires pour pouvoir schéduler le Pod.
+
+
+##  Mise à jour d'un cluster K8S via Kubeadm 
+
+- [ ] Skew Policy à connaitre https://kubernetes.io/releases/version-skew-policy/
+- [ ] Matrice de compatibilité des ressources (API Version) et des Outils.
+- [ ] Mise à jour du noeud Master
+- [ ] Mise à jour des noeuds Worker

@@ -1,6 +1,6 @@
 # Secrets
 
-There are two way to consume secret:
+There are two ways to consume secret:
 
 - Volume
 - env
