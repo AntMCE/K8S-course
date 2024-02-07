@@ -132,7 +132,10 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Identifier le namespace dans lequel se trouve le pod
 - [ ] La policy autorise les connexions entrente (Ingress) seulement depuis le pod **safe-pod**
 - [ ] Aucune règle n'est a appliquer pour le flux soirtant (Egress)
-- [ ] Tester la règle depuis un pod de test lancé dans le namespace par défaut: *k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://svc-pod.axians:80*
+- [ ] Tester la règle depuis un pod de test lancé dans le namespace par défaut:
+      ```
+      *k run tmp --restart=Never --rm --image=nginx:alpine -i -- curl http://svc-pod.axians:80*
+      ```
 - [ ] Tester la règle depuis le pod **safe-pod** via la commande: *k -n setra exec -it safe-pod -- curl http://svc-pod.axians:80*
 
 ## 11 - Administrer les Pods en fonction de leur label ☸️☸️
