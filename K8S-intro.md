@@ -73,7 +73,7 @@ Services: In Kubernetes, a Service is a method for exposing a network applicatio
 
 **Ingress**: Provision a load balancer and works as a reverse proxy (Layer 7)
 
-**YAML terminology:**
+**YAML Ports terminology:**
 
 nodePort: external port on every cluster node
 
