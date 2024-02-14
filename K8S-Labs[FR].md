@@ -116,7 +116,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
-- [ ] Schedule: 0 22 1 1 *
+- [ ] Schedule: ```0 22 1 1 *```
 - [ ] 5 historique de job complété doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
