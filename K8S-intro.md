@@ -50,22 +50,30 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
 
+*With the default maximum of **110 Pods per node** for Standard clusters, Kubernetes assigns a /24 CIDR block (256 addresses) to each of the nodes.*
+
 **Container**: Instance of an image
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
+
+
+
+
 
 ## Services
 Services: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
 
 *3 types of services:*
 
-nodePort:
+**nodePort**: The NodePort service serves as the external entry point for incoming requests for your app
 
-clusterIP:
+**clusterIP**: ClusterIP is the default service type in Kubernetes, and it provides **internal** connectivity between different components of our application
 
-loadBalancer:
+**loadBalancer**: The load balancer tracks the availability of pods with the Kubernetes Endpoints API. When it receives a request for a specific Kubernetes service, the Kubernetes load balancer sorts in order or round robins the request among relevant Kubernetes pods for the service
 
-**YAML terminology:**
+**Ingress**: Provision a load balancer and works as a reverse proxy (Layer 7)
+
+**YAML Ports terminology:**
 
 nodePort: external port on every cluster node
 
@@ -83,11 +91,13 @@ targerPort: Port app listens on in Pods/Containers
 
 **Stable**: Production ready - The version name is vX where X is an integer.
 
+**Kube No Trouble (kubent)** is a simple tool that helps you check your clusters for deprecated APIs. By configuring and running kubent, you'll be able to detect these deprecated APIs based on your deployments and be alerted on whether you should upload your workload first before upgrading your Kubernetes cluster.
+[**Kubent**](https://docs.testkube.io/test-types/executor-kubent/)
+
 ![Alt text](<images/pod api stable.png>)
 
 
 ## 'kubectl get pods' mechanisme
-
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
 
@@ -107,8 +117,13 @@ targerPort: Port app listens on in Pods/Containers
 ## Pod creation mechanisme
 
 
-TO BE COMPLETED 
+kubectl apply -f mypod.yml --> API --> ETCD --> Scheduler -> Worker Node Kublet
 
+The kubelet doesn’t create the Pod by itself. Instead, it delegates the work to three other components:
+
+The Container Runtime Interface (CRI) — the component that creates the containers for the Pod.
+The Container Network Interface (CNI) — the component that connects the containers to the cluster network and assigns IP addresses.
+The Container Storage Interface (CSI) — the component that mounts volumes in your containers.
 
 
 
