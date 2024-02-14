@@ -150,7 +150,7 @@ k config use-context trainee
 ## You now need to make sure your user has the right permission via RBAC
 
 
-# RBAC see the RBAC folder in this repo to get the yml file
+# RBAC see the [RBAC folder](https://github.com/AnthonyMacle/K8S-course/tree/main/RBAC) in this repo to get the yml files
 ```
  k apply -f RBAC-ClusroleRole.yml
 ```
