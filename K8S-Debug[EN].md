@@ -1,3 +1,15 @@
+
+## Get pod Events:
+```
+kubectl describe pod <pod-name> -n <namespace> | grep -A20 "Events:"
+```
+
+```
+kubectl logs <pod-name> -c <container-name>  -n <namespace>
+```
+
+
+
 ## Namespace that's stuck in the "terminating status":
 
 1. Get all k8s resources that are stuck in the "terminating" stage in the Namespace and delete them.
@@ -13,14 +25,10 @@ kubectl replace --raw "/api/v1/namespaces/NAMESPACE_NAME/finalize" -f ./file.jso
 After that, you should see that the Namespace can now be successfully deleted without sitting in the "Terminating" stage
 
 
-## Get pod Events:
-```
-kubectl describe pod <pod-name> -n <namespace> | grep -A20 "Events:"
-```
 ## Pod failures (credit to Suman Chakraborty Senior Solution Engineer at VMware )
 
 Pods can have **startup** and **runtime** errors.
- 
+
  ## Startup errors include:
 
  ✅ ImagePullBackoff (among the 5 common failures )
