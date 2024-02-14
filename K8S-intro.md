@@ -91,6 +91,9 @@ targerPort: Port app listens on in Pods/Containers
 
 **Stable**: Production ready - The version name is vX where X is an integer.
 
+**Kube No Trouble (kubent)** is a simple tool that helps you check your clusters for deprecated APIs. By configuring and running kubent, you'll be able to detect these deprecated APIs based on your deployments and be alerted on whether you should upload your workload first before upgrading your Kubernetes cluster.
+[**Kubent**](https://docs.testkube.io/test-types/executor-kubent/)
+
 ![Alt text](<images/pod api stable.png>)
 
 
