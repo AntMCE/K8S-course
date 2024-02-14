@@ -49,10 +49,15 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 **Node**: Host server
 
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
+With the default maximum of 110 Pods per node for Standard clusters, Kubernetes assigns a /24 CIDR block (256 addresses) to each of the nodes.
 
 **Container**: Instance of an image
 
 **Namespace**: Namespaces are a way to organize clusters into virtual sub-clusters
+
+
+
+
 
 ## Services
 Services: In Kubernetes, a Service is a method for exposing a network application that is running as one or more Pods in your cluster
