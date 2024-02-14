@@ -3,12 +3,26 @@
 ```
 kubectl describe pod <pod-name> -n <namespace> | grep -A20 "Events:"
 ```
-
 ```
 kubectl logs <pod-name> -c <container-name>  -n <namespace>
 ```
-
-
+```
+ kubectl events <pod-name> -n <namespace> 
+```
+**Deployment, DeamonSet, StatefullSet** --> This are the 3 objects used to deploy application. Make sure to know what object type is running in your cluster in order to conduct efficient troubleshooting.
+```
+kubectl get sts,ds,deploy -namespace <namespace>
+```
+You can then investigate further:
+```
+kubectl describe deploy <deploy-name> -n <namespace>
+```
+```
+kubectl describe ds <ds-name>-n <namespace>
+```
+```
+kubectl describe sts  <sts-name>-n <namespace>
+```
 
 ## Namespace that's stuck in the "terminating status":
 
