@@ -110,14 +110,26 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
-- [ ] Ajouter tous les droits dans le namespace Dev
+- [ ] Ajouter tous les droits dans le namespace dev
 
 ## 8 - Cronjob & Job ☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
-- [ ] 3 versions historiques du Job doivent être conservées
+- [ ] Schedule: 0 22 1 1 *
+- [ ] 5 historique de job complété doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
+
+<details><summary>Aide</summary>
+<p>
+
+```
+5 historique de job complété doivent être conservés -> Il faut ajouter ce paramètre: successfulJobsHistoryLimit: 5
+À vous de placer correctement ce paraètre dans votre manifeste YAML.
+```
+</p>
+</details>
+
 
 ## 9 - ServiceAccount ☸️ INDIVIDUEL EN ATELIER
 
