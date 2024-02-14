@@ -50,7 +50,7 @@ https://www.cncf.io/reports/kubernetes-project-journey-report/
 
 **Pod**: Entity that logically contains one or more containers that should be managed as a single entity.
 
-With the default maximum of 110 Pods per node for Standard clusters, Kubernetes assigns a /24 CIDR block (256 addresses) to each of the nodes.
+*With the default maximum of **110 Pods per node** for Standard clusters, Kubernetes assigns a /24 CIDR block (256 addresses) to each of the nodes.*
 
 **Container**: Instance of an image
 
@@ -65,11 +65,13 @@ Services: In Kubernetes, a Service is a method for exposing a network applicatio
 
 *3 types of services:*
 
-nodePort:
+**nodePort**: The NodePort service serves as the external entry point for incoming requests for your app
 
-clusterIP:
+**clusterIP**: ClusterIP is the default service type in Kubernetes, and it provides **internal** connectivity between different components of our application
 
-loadBalancer:
+**loadBalancer**: The load balancer tracks the availability of pods with the Kubernetes Endpoints API. When it receives a request for a specific Kubernetes service, the Kubernetes load balancer sorts in order or round robins the request among relevant Kubernetes pods for the service
+
+**Ingress**: Provision a load balancer and works as a reverse proxy (Layer 7)
 
 **YAML terminology:**
 
