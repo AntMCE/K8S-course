@@ -135,7 +135,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 - [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
-- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
+- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount (par défaut les Token expirent au bout d'une heure)
 
 
 ## 10 - Network Policies ☸️☸️☸️ GROUPE EN ATELIER 
