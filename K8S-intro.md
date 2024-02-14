@@ -99,6 +99,14 @@ targerPort: Port app listens on in Pods/Containers
 
 ## 'kubectl get pods' mechanisme
 
+kubectl apply -f mypod.yml --> API --> ETCD --> Scheduler -> Worker Node Kublet
+
+The kubelet doesn’t create the Pod by itself. Instead, it delegates the work to three other components:
+
+The Container Runtime Interface (CRI) — the component that creates the containers for the Pod.
+The Container Network Interface (CNI) — the component that connects the containers to the cluster network and assigns IP addresses.
+The Container Storage Interface (CSI) — the component that mounts volumes in your containers.
+
 
 1. **kubectl Invocation**: When you run kubectl, you're invoking the Kubernetes command-line interface (CLI). The kubectl command is a client-side tool that communicates with the Kubernetes API server.
 
