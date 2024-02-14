@@ -26,7 +26,7 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 
 ☸️☸️☸️ -> Difficile
 
-## 1 - Mon premier pod Kubernetes ☸️☸️ 
+## 1 - Mon premier pod Kubernetes ☸️☸️  INDIVIDUEL EN ATELIER
 
 - [ ] Création d'un *pod* nommé **votre trigamme**
   - [ ] Utilisant l'image **httpd:2.4.41-alpine**
@@ -53,7 +53,7 @@ spec:
 </p>
 </details>
 
-## 2 - Mon premier déploiement Kubernetes ☸️☸️ 
+## 2 - Mon premier déploiement Kubernetes ☸️☸️ INDIVIDUEL EN ATELIER
 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
@@ -67,7 +67,7 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 3 - Stockage persistant ☸️☸️☸️
+## 3 - Stockage persistant ☸️☸️☸️ INDIVIDUEL POST ATELIER
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -91,7 +91,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 5 - Initiation à Helm ☸️
+## 5 - Initiation à Helm ☸️ GROUPE EN ATELIER
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -100,33 +100,33 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
 
-## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️
+## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️ GROUPE EN ATELIER
 
 - [ ] Dans le namespace *dev*
 - [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
 - [ ] Corriger le problème
 
-## 7 - Etendre les droits du user trainee via RBAC☸️☸️
+## 7 - Etendre les droits du user trainee via RBAC☸️☸️ GROUPE EN ATELIER
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
 - [ ] Ajouter tous les droits dans le namespace Dev
 
-## 8 - Cronjob & Job ☸️
+## 8 - Cronjob & Job ☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Créer un Cronjob qui instancie l'image XXX
 - [ ] Dans le namespace **votre prénom**
 - [ ] 3 versions historiques du Job doivent être conservées
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
-## 9 - ServiceAccount ☸️
+## 9 - ServiceAccount ☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
 - [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
 
 
-## 10 - Network Policies ☸️☸️☸️
+## 10 - Network Policies ☸️☸️☸️ GROUPE EN ATELIER 
 
 - [ ] Appliquer une Network Policiy sur le pod **sensitive-pod**
 - [ ] Identifier le namespace dans lequel se trouve le pod
@@ -140,14 +140,14 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
       ```
       k -n setra exec -it safe-pod -- curl http://svc-pod.axians:80*
       ```
-## 11 - Administrer les Pods en fonction de leur label ☸️☸️
+## 11 - Administrer les Pods en fonction de leur label ☸️☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Dans le namespace **votre prénom**
 - [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
 - [ ] Supprimer tous les pods ayant le label delete=ok
 
 
-## 12 - Deployment Rollout ☸️☸️
+## 12 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Dans le namespace **votre prénom**
 - [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
