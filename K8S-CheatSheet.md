@@ -157,3 +157,12 @@ k config use-context trainee
 ```
 k apply -f RBAC-ClusroleRoleBinding.yml
 ```
+
+# Cronjob & Job
+
+[Cronjob template exemple](https://github.com/AnthonyMacle/K8S-course/tree/main/Cronjob)
+
+Trigger a Kubernetes Scheduled Job manually
+```
+kubectl create job --from=cronjob/<cronjob-name> <job-name> -n <namespace-name>
+```
