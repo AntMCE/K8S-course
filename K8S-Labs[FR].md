@@ -139,7 +139,7 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 ```
 
-Le manifeste se trouve ;) [ici](https://github.com/AnthonyMacle/K8S-course/blob/main/Cronjob/Cronjob.yml)
+Le manifeste se trouve ici: https://github.com/AnthonyMacle/K8S-course/blob/main/Cronjob/Cronjob.yml
 
 5 historique de job complété doivent être conservés -> Il faut ajouter ce paramètre: successfulJobsHistoryLimit: 5
 À vous de placer correctement ce paraètre dans votre manifeste YAML.
