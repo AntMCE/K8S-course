@@ -67,7 +67,18 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 3 - Stockage persistant ☸️☸️☸️ INDIVIDUEL POST ATELIER
+
+## 3 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
+
+- [ ] Dans le namespace **votre prénom**
+- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
+- [ ] Vérifier l'hitorique de rollout deployment
+- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
+- [ ] Nous savons que le déploiement initial fonctionnait correctement
+
+     
+
+## 4 - Stockage persistant ☸️☸️☸️ INDIVIDUEL POST ATELIER
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -158,14 +169,6 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
 - [ ] Supprimer tous les pods ayant le label delete=ok
 
-
-## 12 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
-
-- [ ] Dans le namespace **votre prénom**
-- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
-- [ ] Vérifier l'hitorique de rollout deployment
-- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
-- [ ] Nous savons que le déploiement initial fonctionnait correctement
 
 
 # Pour aller plus loins 💡
