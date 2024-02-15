@@ -117,6 +117,17 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
 - [ ] Corriger le problème
 
+<details><summary>Aide</summary>
+<p>
+
+```
+Sur la page K8S-Debug vous trouverez ce dont vous avez besoin:
+- 1 La commande à jouer pour trouver la raçine du problème
+- 2 Une explication sur le message d'erreur rencontré
+```
+</p>
+</details>
+
 
 ## 6 - Initiation à Helm ☸️ GROUPE EN ATELIER
 
