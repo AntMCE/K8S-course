@@ -127,16 +127,20 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 
 ## 8 - Cronjob & Job ☸️ INDIVIDUEL EN ATELIER
 
-- [ ] Créer un Cronjob qui instancie l'image XXX
+- [ ] Créer un Cronjob qui instancie l'image : **busybox:1.28**
 - [ ] Dans le namespace **votre prénom**
 - [ ] Schedule: ```0 22 1 1 *```
 - [ ] 5 historique de job complété doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
 
+
 <details><summary>Aide</summary>
 <p>
 
 ```
+
+Le manifeste se trouve ;) [ici](https://github.com/AnthonyMacle/K8S-course/blob/main/Cronjob/Cronjob.yml)
+
 5 historique de job complété doivent être conservés -> Il faut ajouter ce paramètre: successfulJobsHistoryLimit: 5
 À vous de placer correctement ce paraètre dans votre manifeste YAML.
 ```
