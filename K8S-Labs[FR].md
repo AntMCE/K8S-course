@@ -67,6 +67,15 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
+<details><summary>Aide</summary>
+<p>
+
+```
+Sur la page K8S-CheatSheet, vous devriez trouver ce dont vous avez besoin. Une commande de type "dry run" vous permettra de générer un template de manifeste de deploiement.
+```
+</p>
+</details>
+
 
 ## 3 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
 
