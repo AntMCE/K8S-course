@@ -102,7 +102,14 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 5 - Initiation à Helm ☸️ GROUPE EN ATELIER
+## 5 - Debuger le deployment "bugged-app"  ☸️☸️☸️ GROUPE EN ATELIER
+
+- [ ] Dans le namespace *dev*
+- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
+- [ ] Corriger le problème
+
+
+## 6 - Initiation à Helm ☸️ GROUPE EN ATELIER
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -111,11 +118,6 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
 
-## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️ GROUPE EN ATELIER
-
-- [ ] Dans le namespace *dev*
-- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
-- [ ] Corriger le problème
 
 ## 7 - Etendre les droits du user trainee via RBAC☸️☸️ GROUPE EN ATELIER
 
