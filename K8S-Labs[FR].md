@@ -67,7 +67,27 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
 - [ ] Accéder au service whoami depuis votre moteur de recherche
 
-## 3 - Stockage persistant ☸️☸️☸️ INDIVIDUEL POST ATELIER
+<details><summary>Aide</summary>
+<p>
+
+```
+Sur la page K8S-CheatSheet, vous devriez trouver ce dont vous avez besoin. Une commande de type "dry run" vous permettra de générer un template de manifeste de deploiement.
+```
+</p>
+</details>
+
+
+## 3 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
+
+- [ ] Dans le namespace **votre prénom**
+- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
+- [ ] Vérifier l'hitorique de rollout deployment
+- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
+- [ ] Nous savons que le déploiement initial fonctionnait correctement
+
+     
+
+## 4 - Stockage persistant ☸️☸️☸️ INDIVIDUEL POST ATELIER
 
 Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage Persistant*.
 
@@ -91,7 +111,25 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
   
 
 
-## 5 - Initiation à Helm ☸️ GROUPE EN ATELIER
+## 5 - Debuger le deployment "bugged-app"  ☸️☸️☸️ GROUPE EN ATELIER
+
+- [ ] Dans le namespace *dev*
+- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
+- [ ] Corriger le problème
+
+<details><summary>Aide</summary>
+<p>
+
+```
+Sur la page K8S-Debug vous trouverez ce dont vous avez besoin:
+- 1 La commande à jouer pour trouver la raçine du problème
+- 2 Une explication sur le message d'erreur rencontré
+```
+</p>
+</details>
+
+
+## 6 - Initiation à Helm ☸️ GROUPE EN ATELIER
 
 - [ ] Lister les applications installées via Helm
 - [ ] Mettre à jour les repo Helm
@@ -100,30 +138,41 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Upgrader une application installé via Helm (avec version spécifique)
 
 
-## 6 - Debuger le deployment "bugged-app"  ☸️☸️☸️ GROUPE EN ATELIER
-
-- [ ] Dans le namespace *dev*
-- [ ] Trouver la racine du problème présent sur le déploiement *bugged-app*
-- [ ] Corriger le problème
 
 ## 7 - Etendre les droits du user trainee via RBAC☸️☸️ GROUPE EN ATELIER
 
 - [ ] Ajouter le droit de modifier les resources deployments au niveau de tout le cluster
 - [ ] Supprimer le droit de pouvoir lister les secrets au niveau de tout le cluster
-- [ ] Ajouter tous les droits dans le namespace Dev
+- [ ] Ajouter tous les droits dans le namespace dev
 
 ## 8 - Cronjob & Job ☸️ INDIVIDUEL EN ATELIER
 
-- [ ] Créer un Cronjob qui instancie l'image XXX
+- [ ] Créer un Cronjob qui instancie l'image : **busybox:1.28**
 - [ ] Dans le namespace **votre prénom**
-- [ ] 3 versions historiques du Job doivent être conservées
+- [ ] Schedule: ```0 22 1 1 *```
+- [ ] 5 historique de job complété doivent être conservés
 - [ ] Un job doit être déclenché manuellement depuis ce Cronjob
+
+
+<details><summary>Aide</summary>
+<p>
+
+```
+
+Le manifeste se trouve ici: https://github.com/AnthonyMacle/K8S-course/blob/main/Cronjob/Cronjob.yml
+
+5 historique de job complété doivent être conservés -> Il faut ajouter ce paramètre: successfulJobsHistoryLimit: 5
+À vous de placer correctement ce paraètre dans votre manifeste YAML.
+```
+</p>
+</details>
+
 
 ## 9 - ServiceAccount ☸️ INDIVIDUEL EN ATELIER
 
 - [ ] Créer un ServiceAccount nommé "sa-monitoring"
 - [ ] Dans le namespace **votre prénom**
-- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount 
+- [ ] Créer un Token d'une durée de 3 mois pour ce ServiceAccount (par défaut les Token expirent au bout d'une heure)
 
 
 ## 10 - Network Policies ☸️☸️☸️ GROUPE EN ATELIER 
@@ -146,14 +195,6 @@ Dans cet exercice, vous allez déployer un *Deployment* utilisant un *Stockage P
 - [ ] Ajouter le label delete=ok aux pods ayant déjà le label env=test
 - [ ] Supprimer tous les pods ayant le label delete=ok
 
-
-## 12 - Deployment Rollout ☸️☸️ INDIVIDUEL EN ATELIER
-
-- [ ] Dans le namespace **votre prénom**
-- [ ] Il y un deployment nommé "sophia-app", il faut vérifier le statut de ses pods
-- [ ] Vérifier l'hitorique de rollout deployment
-- [ ] Revenir à un deployment fonctionnel en utilasant une commande de type "kubectl rollout" et en précisant la **REVISION** antérieur souhaitée
-- [ ] Nous savons que le déploiement initial fonctionnait correctement
 
 
 # Pour aller plus loins 💡

@@ -4,6 +4,11 @@ Create a yaml deployment template
 ```
 k create deploy DEPLOYMENT_NAME --image=containous/whoami --port=80 --replicas=3 --dry-run=client -o yaml > deploy.yml
 ```
+create a yaml sercive template
+```
+k create service nodeport ns-service --tcp=80:80 --dry-run=client -o yaml > svc.yml
+```
+
 Show labels of all pods in the namespace sun
 ```
 k -n sun get pod --show-labels
@@ -156,4 +161,13 @@ k config use-context trainee
 ```
 ```
 k apply -f RBAC-ClusroleRoleBinding.yml
+```
+
+# Cronjob & Job
+
+[Cronjob template exemple](https://github.com/AnthonyMacle/K8S-course/tree/main/Cronjob)
+
+Trigger a Kubernetes Scheduled Job manually
+```
+kubectl create job --from=cronjob/<cronjob-name> <job-name> -n <namespace-name>
 ```
