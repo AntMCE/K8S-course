@@ -162,7 +162,9 @@ k config use-context trainee
 ```
 k apply -f RBAC-ClusroleRoleBinding.yml
 ```
-
+```
+k auth can-i list secrets --as username
+```
 # Cronjob & Job
 
 [Cronjob template exemple](https://github.com/AnthonyMacle/K8S-course/tree/main/Cronjob)
