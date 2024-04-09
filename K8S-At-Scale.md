@@ -11,3 +11,7 @@ https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/
 
 https://www.youtube.com/watch?v=VlaeB4Mxx6o
 
+## Horizontal / Vertical scaling
+
+Karpenter -> Vertical
+KEDA -> Horizontal
