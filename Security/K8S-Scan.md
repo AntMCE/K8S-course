@@ -12,7 +12,7 @@ docker run ghcr.io/aquasecurity/trivy:latest image ImageToScan:Tag
 
 scan cluster toward CIS Benchmark
 
-#KubeHound
+# KubeHound
 
 Scan posible attack scenario path
 
