@@ -1,5 +1,11 @@
 # Everydays Command
 
+Replace image in a deployment
+
+```
+kubectl set image deployment/my-deployment mycontainer=myimage:1.9.1
+```
+
 Create a yaml deployment template
 ```
 k create deploy DEPLOYMENT_NAME --image=containous/whoami --port=80 --replicas=3 --dry-run=client -o yaml > deploy.yml
