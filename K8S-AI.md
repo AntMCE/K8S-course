@@ -11,5 +11,5 @@ PredictKube is an AI-based predictive autoscaler for KEDA.
 This seems interesting to try out since KEDA has [graduated from CNCF](https://www.cncf.io/announcements/2023/08/22/cloud-native-computing-foundation-announces-graduation-of-kubernetes-autoscaler-keda/)
 
 
-##Kubeflow
+## Kubeflow
 [Kubeflow](https://www.kubeflow.org/)
