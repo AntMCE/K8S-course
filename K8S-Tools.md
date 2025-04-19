@@ -9,3 +9,8 @@ API Server directly installed on laptop to make sure resources can be deployed b
 
 ## Top Featured Kubernetes Tools( March 2024)
 https://collabnix.github.io/kubetools/
+
+
+## Kubespec (check manifest version)
+
+https://kubespec.dev
